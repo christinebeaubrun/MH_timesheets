@@ -7,19 +7,24 @@ class TimesheetsController < ApplicationController
     @timesheet = Timesheet.new(params[:timesheet])
       if @timesheet.valid?
         # GO ACTION MAILER: CHRIS & SAM
-        render :partial => 'preview'
+        @name = "#{@timesheet.firstname}, #{@timesheet.lastname}"
+        @message = @timesheet
+        @email = @timesheet.email
+
+        ConfirmationMailer.confirmation_email(@name, @message, @email).deliver
+        render :action => 'send_email'
+        # render :partial => 'preview'
       else
         render :action => 'new'
       end
   end
 
-  def show
-    @timesheet
-  end
+  # def send_email
+  #   @name = "#{@timesheet.firstname}, #{@timesheet.lastname}"
+  #   @message = @timesheet
+  #   @email = @timesheet.email
 
-  def send_email
-    # @timesheet = Timesheet.new(params[:timesheet])
-    ConfirmationMailer.confirmation_email(@name, @message, @email).deliver
-  end
+  #   ConfirmationMailer.confirmation_email(@name, @message, @email).deliver
+  # end
 
 end

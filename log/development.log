@@ -4603,3 +4603,425 @@ Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 18:08:02 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 18:08:02 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 18:29:00 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_preview.html.erb (2.4ms)
+  Rendered timesheets/new.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 238ms (Views: 201.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 18:29:01 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 18:29:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 18:29:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 18:29:01 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 18:29:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 18:29:01 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 18:29:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 18:29:01 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-06 18:29:01 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 18:29:52 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 18:29:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 18:29:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 18:29:52 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 18:29:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 18:29:52 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 18:29:52 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-06 18:29:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 18:29:52 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 18:29:52 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 18:31:03 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 18:31:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 18:31:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 18:31:03 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-06 18:31:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 18:31:03 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 18:31:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 18:31:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 18:31:03 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 18:31:03 -0400
+
+
+Started POST "/timesheets" for 127.0.0.1 at 2014-08-06 18:31:45 -0400
+Processing by TimesheetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+6PnebMuOyuT5ah0EX+SZ/mYjF18EfVtZQR8tYzYML4=", "timesheet"=>{"firstname"=>"Christine", "lastname"=>"Be", "email"=>"christinebeaubrun@gmail.com", "date"=>"2014-08-07", "day_worked"=>"sf", "start_time"=>"sfd", "hours_worked"=>"asdf", "total_hours_worked"=>"fad", "subtotal_pay"=>"adfa", "position"=>"fafs", "work_week"=>"sfad", "shift_pay"=>"afdas", "pay_rate"=>"afdaf", "grand_total"=>"ads"}, "commit"=>"Preview"}
+  Rendered timesheets/_preview.html.erb (0.4ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_email" for 127.0.0.1 at 2014-08-06 18:33:50 -0400
+Processing by TimesheetsController#send_email as HTML
+  Rendered confirmation_mailer/confirmation_email.html.erb (0.5ms)
+
+ConfirmationMailer#confirmation_email: processed outbound mail in 52.3ms
+
+Sent mail to mhailr@gmail.com (3160.9ms)
+Date: Wed, 06 Aug 2014 18:33:50 -0400
+From: christinebeaubrun@gmail.com
+To: mhailr@gmail.com
+Message-ID: <53e2ad4e8a288_a45d3ff554f2ee58294d2@christibrunsmbp.mail>
+Subject: Sent from MuseumHack Timesheet app!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Success! (maybe)</h1>
+
+  Rendered timesheets/send_email.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3233ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 18:33:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 18:33:53 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 18:33:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 18:33:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 18:33:53 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 18:33:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 18:33:53 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-06 18:33:53 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 18:33:53 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 19:09:31 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 19:09:31 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 19:09:31 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-06 19:09:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 19:09:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 19:09:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 19:09:32 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 19:09:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 19:09:32 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 19:09:32 -0400
+
+
+Started POST "/timesheets" for 127.0.0.1 at 2014-08-06 19:10:05 -0400
+Processing by TimesheetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+6PnebMuOyuT5ah0EX+SZ/mYjF18EfVtZQR8tYzYML4=", "timesheet"=>{"firstname"=>"Christine", "lastname"=>"Beaubrun", "email"=>"christinebeaubrun@gmail.com", "date"=>"2014-08-07", "day_worked"=>"asdfsa", "start_time"=>"afda", "hours_worked"=>"afdaf", "total_hours_worked"=>"afaa", "subtotal_pay"=>"fda", "position"=>"kjhkh", "work_week"=>"hkjh", "shift_pay"=>"kh", "pay_rate"=>"kh", "grand_total"=>"kh"}, "commit"=>"Preview"}
+  Rendered timesheets/_preview.html.erb (0.5ms)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_email" for 127.0.0.1 at 2014-08-06 19:10:11 -0400
+Processing by TimesheetsController#send_email as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `firstname' for nil:NilClass):
+  app/controllers/timesheets_controller.rb:21:in `send_email'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 19:19:07 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 166ms (Views: 148.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 19:19:08 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-06 19:19:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 19:19:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 19:19:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 19:19:08 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 19:19:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 19:19:08 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 19:19:08 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 19:19:08 -0400
+
+
+Started POST "/timesheets" for 127.0.0.1 at 2014-08-06 19:19:57 -0400
+Processing by TimesheetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+6PnebMuOyuT5ah0EX+SZ/mYjF18EfVtZQR8tYzYML4=", "timesheet"=>{"firstname"=>"Christine", "lastname"=>"Beaubrun", "email"=>"christinebeaubrun@gmail.com", "date"=>"2014-08-07", "day_worked"=>"kjhk", "start_time"=>"kjhkjh", "hours_worked"=>"kjhkj", "total_hours_worked"=>"kjhk", "subtotal_pay"=>"kjhkj", "position"=>"kjhkj", "work_week"=>"kjkjh", "shift_pay"=>"kjhkjh", "pay_rate"=>"kjhkjh", "grand_total"=>"kjhkj"}, "commit"=>"Preview"}
+  Rendered confirmation_mailer/confirmation_email.html.erb (0.6ms)
+
+ConfirmationMailer#confirmation_email: processed outbound mail in 43.6ms
+
+Sent mail to mhailr@gmail.com (2889.5ms)
+Date: Wed, 06 Aug 2014 19:19:57 -0400
+From: mhailr@gmail.com
+To: mhailr@gmail.com
+Message-ID: <53e2b81d9a485_aa123ffa4fce44b86967e@christibrunsmbp.mail>
+Subject: Sent from MuseumHack Timesheet app!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Hi, Christine, Beaubrun</h1>
+<h3>Here is your timesheet below</h3>
+<p>#&lt;Timesheet:0x007ff49f952dd8&gt;</p>
+
+  Rendered timesheets/send_email.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2949ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 19:20:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 19:20:00 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 19:20:00 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 19:20:00 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-06 19:20:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 19:20:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 19:20:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 19:20:00 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 19:20:00 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 19:25:46 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 19:25:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 19:25:46 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 19:25:46 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 19:25:46 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 19:25:46 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 19:25:46 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-06 19:25:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 19:25:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 19:25:46 -0400
+
+
+Started POST "/timesheets" for 127.0.0.1 at 2014-08-06 19:26:19 -0400
+Processing by TimesheetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+6PnebMuOyuT5ah0EX+SZ/mYjF18EfVtZQR8tYzYML4=", "timesheet"=>{"firstname"=>"Christine", "lastname"=>"Beaubrun", "email"=>"christinebeaubrun@gmail.com", "date"=>"2014-08-07", "day_worked"=>"jkjhkj", "start_time"=>"khkjhkj", "hours_worked"=>"kjhkjhkj", "total_hours_worked"=>"kjkhkjh", "subtotal_pay"=>"kjhkjhk", "position"=>"kjhkjh", "work_week"=>"jkhkjh", "shift_pay"=>"kjhkjh", "pay_rate"=>"jkhkjh", "grand_total"=>"kjhkjh"}, "commit"=>"Preview"}
+  Rendered confirmation_mailer/confirmation_email.html.erb (4.6ms)
+
+ConfirmationMailer#confirmation_email: processed outbound mail in 15.8ms
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `firstname' for nil:NilClass):
+    1: <h1>Hi, <%= @name %></h1>
+    2: <h3>Here is your timesheet below</h3>
+    3:     <p>First name: <%= @timesheet.firstname%><br /></p>
+    4:     <p>Last name:  <%= @timesheet.lastname%><br /></p>
+    5:     <p>Email:  <%= @timesheet.email%><br /></p>
+    6:     <p>Date:  <%= @timesheet.date%><br /></p>
+  app/views/confirmation_mailer/confirmation_email.html.erb:3:in `_app_views_confirmation_mailer_confirmation_email_html_erb___4428919439374652776_70344285612520'
+  app/mailers/confirmation_mailer.rb:8:in `confirmation_email'
+  app/controllers/timesheets_controller.rb:14:in `create'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.7ms)
+
+
+Started POST "/timesheets" for 127.0.0.1 at 2014-08-06 19:32:25 -0400
+Processing by TimesheetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+6PnebMuOyuT5ah0EX+SZ/mYjF18EfVtZQR8tYzYML4=", "timesheet"=>{"firstname"=>"Christine", "lastname"=>"Beaubrun", "email"=>"christinebeaubrun@gmail.com", "date"=>"2014-08-07", "day_worked"=>"jkjhkj", "start_time"=>"khkjhkj", "hours_worked"=>"kjhkjhkj", "total_hours_worked"=>"kjkhkjh", "subtotal_pay"=>"kjhkjhk", "position"=>"kjhkjh", "work_week"=>"jkhkjh", "shift_pay"=>"kjhkjh", "pay_rate"=>"jkhkjh", "grand_total"=>"kjhkjh"}, "commit"=>"Preview"}
+  Rendered confirmation_mailer/confirmation_email.html.erb (1.1ms)
+
+ConfirmationMailer#confirmation_email: processed outbound mail in 61.8ms
+
+Sent mail to christinebeaubrun@gmail.com (2767.4ms)
+Date: Wed, 06 Aug 2014 19:32:25 -0400
+From: mhailr@gmail.com
+To: christinebeaubrun@gmail.com
+Message-ID: <53e2bb0956d48_aa123ffa4e5c86e469741@christibrunsmbp.mail>
+Subject: Sent from MuseumHack Timesheet app!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Hi, Christine, Beaubrun</h1>
+<h3>Here is your timesheet below</h3>
+
+<p>First name: Christine<br /></p>
+    <p>Last name:  Beaubrun<br /></p>
+    <p>Email:  christinebeaubrun@gmail.com<br /></p>
+    <p>Date:  2014-08-07<br /></p>
+    <p>Shift:  jkjhkj<br /></p>
+    <p>Start time:  khkjhkj<br /></p>
+    <p>Hours worked:  kjhkjhkj<br /></p></p>
+    <p>Total hours worked:  kjkhkjh<br /></p>
+    <p>Subtotal pay:  kjhkjhk<br /></p>
+    <p>Position:  kjhkjh<br /></p>
+    <p>Work week:  jkhkjh<br /></p>
+    <p>Shift pay:  kjhkjh<br /></p>
+    <p>Pay rate:  jkhkjh<br /></p>
+    <p>Grand total: kjhkjh</p>
+
+  Rendered timesheets/send_email.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2839ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 19:32:28 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-06 19:32:28 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 19:32:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 19:32:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 19:32:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 19:32:28 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 19:32:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 19:32:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 19:32:28 -0400
