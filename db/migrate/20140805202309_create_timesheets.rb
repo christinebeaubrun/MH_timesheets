@@ -3,6 +3,7 @@ class CreateTimesheets < ActiveRecord::Migration
     create_table :timesheets do |t|
       t.string   :name
       t.string   :email 
+      t.datetime :date 
       t.string   :day_worked
       t.string   :start_time
       t.decimal  :hours_worked
