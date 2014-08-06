@@ -6,7 +6,8 @@ class TimesheetsController < ApplicationController
   def create
     @timesheet = Timesheet.new(params[:timesheet])
       if @timesheet.valid?
-        render :partial => 'preview'
+        # GO ACTION MAILER: CHRIS & SAM
+        # render :partial => 'preview'
       else
         render :action => 'new'
       end
