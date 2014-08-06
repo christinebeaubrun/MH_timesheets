@@ -6,11 +6,14 @@ class TimesheetsController < ApplicationController
   def create
     @timesheet = Timesheet.new(params[:timesheet])
       if @timesheet.valid?
-        flash[:notice] = "Timesheet sent! Thank you for contacting us."
-        redirect_to root_url
+        render :partial => 'preview'
       else
         render :action => 'new'
       end
   end
+
+  # def show
+  #   @timesheet
+  # end
 
 end
