@@ -4,8 +4,7 @@ Rails.application.routes.draw do
   # get 'timesheets/create'
 
   root "timesheets#new"
-  resources :timesheets
-  resources :confirmation
+  resource :timesheets, only: [:new, :create, :show]
 
   post '/' => 'timesheets#create'
 
