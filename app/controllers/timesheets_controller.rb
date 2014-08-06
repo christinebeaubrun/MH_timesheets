@@ -1,9 +1,6 @@
 class TimesheetsController < ApplicationController
   def new
-  end
-
-  def update
-    # EMPLOYEE AND TIMESHEET HAVE ALREADY BEEN CREATED, FINDING TIMESHEET IN DATABASE
+    @timesheet = Timesheet.new 
   end
 
   def create
