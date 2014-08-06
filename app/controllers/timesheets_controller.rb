@@ -4,9 +4,13 @@ class TimesheetsController < ApplicationController
   end
 
   def create
-    # CREATE EMPLOYEE AND SAVE TIMESHEET TO EMPLOYEE
-    # IF EMPLOYEE EXIST, SEARCH FOR THAT EMPLOYEE ELSE CREATE NEW EMPLOYEE
-    # REDIRECT TO TIMESHEET SHOW AFTER SAVING TO DATABASE
+    @timesheet = Timesheet.new(params[:timesheet])
+      if @timesheet.valid?
+        flash[:notice] = "Timesheet sent! Thank you for contacting us."
+        redirect_to root_url
+      else
+        render :action => 'new'
+      end
   end
 
 end
