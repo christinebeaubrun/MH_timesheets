@@ -5,8 +5,8 @@ class Timesheet
   include ActiveModel::Conversion
   extend ActiveModel::Naming
 
-  attr_accessor :firstname, :lastname, :email, :start_time, :position, :work_week, :day_worked, :hours_worked, 
-                :total_hours_worked, :shift_pay, :pay_rate, :grand_total, :date, :start_time, :total_pay
+  attr_accessor :firstname, :lastname, :email, :start_time, :position, :work_week, :day_worked, :hours_worked,
+                :total_hours_worked, :shift_pay, :pay_rate, :grand_total, :date, :start_time, :subtotal_pay
 
   validates_presence_of :firstname, :lastname, :start_time, :position, :work_week, :day_worked,
                         :hours_worked, :total_hours_worked, :shift_pay, :pay_rate, :grand_total, :email, :date, :subtotal_pay, :start_time
@@ -18,7 +18,7 @@ class Timesheet
       send("#{name}=", value)
     end
   end
-  
+
   def persisted?
     false
   end

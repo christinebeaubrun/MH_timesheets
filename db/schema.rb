@@ -14,8 +14,7 @@
 ActiveRecord::Schema.define(version: 20140805202309) do
 
   create_table "timesheets", force: true do |t|
-    t.string   "firstname"
-    t.string   "lastname"
+    t.string   "name"
     t.string   "email"
     t.string   "day_worked"
     t.string   "start_time"
