@@ -1,0 +1,20 @@
+<h1>Timesheets#new</h1>
+<h1>Let's Get You Paid</h1>
+<p>Find me in app/views/timesheets/new.html.erb</p>
+  <%= form_for :timesheet do |f| %>
+    First name: <%= f.text_field :firstname %><br />
+    Last name:  <%= f.text_field :lastname %><br />
+    Email:  <%= f.email_field :email %><br />
+    Shift:  <%= f.text_field :day_worked %><br />
+    Start time:  <%= f.text_field :starttime %><br />
+    Hours worked:  <%= f.text_field :hours_worked %><br />
+    Total hours worked:  <%= f.text_field :total_hours_worked %><br />
+    Total pay:  <%= f.text_field :total_pay %><br />
+    Position:  <%= f.text_field :position %><br />
+    <%= hidden_field(:timesheet, :work_week) %><br />
+    Grand total: <%= f.text_field :grand_total %>
+  <p>
+  <%= f.submit "Submit" %>
+  </p>
+<% end %>
+
