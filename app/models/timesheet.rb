@@ -14,6 +14,7 @@ class Timesheet
   # validates :hours_worked, :total_hours_worked, :shift_pay, :pay_rate, :grand_total, numericality: true
 
   def initialize(attributes = {})
+    # binding.pry
     attributes.each do |name, value|
       send("#{name}=", value)
     end
