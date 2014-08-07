@@ -10,7 +10,14 @@ class TimesheetsController < ApplicationController
         @message = @timesheet
         @email = @timesheet.email
 
-        ConfirmationMailer.confirmation_email(@name, @message, @email).deliver
+        payroll = "mhmailr@gmail.com"
+        recipients = [payroll, @email]
+
+        recipients.each do |email|
+          ConfirmationMailer.confirmation_email(@name, @message, email).deliver
+        end
+
+        # ConfirmationMailer.confirmation_email(@name, @message, @email).deliver
         render :action => 'send_email'
         # redirect_to root_path, success: "Email Sent, you gettin paid!"
         # render :partial => ''
