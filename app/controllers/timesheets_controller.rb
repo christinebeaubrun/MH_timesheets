@@ -29,11 +29,4 @@ class TimesheetsController < ApplicationController
   #   ConfirmationMailer.confirmation_email(@name, @message, @email).deliver
   # end
 
-<<<<<<< HEAD
-  # def send_email
-  #   ConfirmationMailer.confirmation_email(@timesheet).deliver
-  # end
-=======
->>>>>>> js_confirm
-
 end

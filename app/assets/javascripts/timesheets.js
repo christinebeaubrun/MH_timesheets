@@ -11,13 +11,16 @@ $(document).on('page:change', function(){
       $('span[role=' + thisId + ']').text($this.val());
     });
 
-    review.click(function(){
+    review.click(function(event){
       // emailPreview.toggle("slow");
+      event.preventDefault();
+
       timesheet.slideUp();
       emailPreview.slideDown();
     });
 
-    edit.click(function(){
+    edit.click(function(event){
+      event.preventDefault();
       timesheet.slideDown();
       emailPreview.slideUp();
     });
