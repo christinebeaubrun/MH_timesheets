@@ -1,19 +1,16 @@
 <h1>Let's Review Your Timesheet</h1>
 
-    First name: <%= @timesheet.firstname%><br />
-    Last name:  <%= @timesheet.lastname%><br />
-    Email:  <%= @timesheet.email%><br />
-    Date:  <%= @timesheet.date%><br />
-    Shift:  <%= @timesheet.day_worked%><br />
-    Start time:  <%= @timesheet.start_time%><br />
-    Hours worked:  <%= @timesheet.hours_worked%><br />
-    Total hours worked:  <%= @timesheet.total_hours_worked%><br />
-    Subtotal pay:  <%= @timesheet.subtotal_pay%><br />
-    Position:  <%= @timesheet.position%><br />
-    Work week:  <%= @timesheet.work_week%><br />
-    Shift pay:  <%= @timesheet.shift_pay%><br />
-    Pay rate:  <%= @timesheet.pay_rate%><br />
-    Grand total: <%= @timesheet.grand_total%>
-
-<!-- <h5>Submit button</h5> -->
-<%= button_to "submit email", timesheets_path %>
+    First name: <span role="timesheet_firstname"></span><br>
+    Last name:  <span role="timesheet_lastname"></span><br>
+    Email:  <span role="timesheet_email"></span><br />
+    Date:  <span role="timesheet_date"></span><br />
+    Shift:  <span role="timesheet_day_worked"></span><br />
+    Start time:  <span role="timesheet_start_time"></span><br />
+    Hours worked:  <span role="timesheet_hours_worked"></span><br />
+    Total hours worked:  <span role="timesheet_total_hours_worked"></span><br />
+    Subtotal pay:  <span role="timesheet_subtotal_pay"></span><br />
+    Position:  <span role="timesheet_position"></span><br />
+    Work week:  <span role="timesheet_work_week"></span><br />
+    Shift pay:  <span role="timesheet_shift_pay"></span><br />
+    Pay rate:  <span role="timesheet_pay_rate"></span><br />
+    Grand total: <span role="timesheet_grand_total"></span><br>
