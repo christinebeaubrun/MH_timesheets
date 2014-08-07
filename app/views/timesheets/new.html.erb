@@ -1,4 +1,36 @@
+<h1>Timesheets#new</h1>
+<h1>Let's Get You Paid</h1>
+  <%= form_for @timesheet do |f| %>
+    <% if @timesheet.errors.any? %>
+      <div id="error-explanation">
+        <h2><%= pluralize(@timesheet.errors.count, "error") %> prohibit your timesheet from being sent:</h2>
+            <ul>
+            <%= @timesheet.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+            </ul>
+      </div>
+    <% end %>
 
+    First name:<%= f.text_field :firstname%><br />
+    Last name:<%= f.text_field :lastname%><br />
+    Email:<%= f.email_field :email%><br />
+    <br /><br />
+    <div class="shiftform">
+    Shift date:<%= f.text_field :day_worked %><br />
+    Start time:<%= f.text_field :start_time %><br />
+    Hours worked:<%= f.text_field :hours_worked, class: "hours-worked" %><br />
+    Position:<%= f.text_field :position %><br />
+    Pay rate:<%= f.text_field :pay_rate, class: "pay-rate" %><br />
+    Wages for this shift:<%= f.text_field :subtotal_wages, class: "subtotal-wages" %><br />
+    </div> 
+    <div id="placeholder"></div>
+    <button type="button" id="add_form_button">Add another shift</button><br />
+    
+    Grand total:<%= f.text_field :grand_total%>
+  <p>
+  <%= f.submit "Preview" %>
+>>>>>>> adding bc of wierd text editor issues
 
 <div id="validations">
    <% if @timesheet.errors.any? %>
