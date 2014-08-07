@@ -1,8 +1,16 @@
 $(document).on('page:change', function(){
+
+  history.pushState(null, null, location.href);
+    window.onpopstate = function(event) {
+    history.go(1);
+  };
+
     var review = $('#review'),
         edit = $('#edit'),
         timesheet = $('#timesheet'),
         emailPreview = $('#email-preview');
+
+
 
     $('form#new_timesheet').on('change', 'input', function(){
       var $this = $(this),
@@ -12,9 +20,7 @@ $(document).on('page:change', function(){
     });
 
     review.click(function(event){
-      // emailPreview.toggle("slow");
       event.preventDefault();
-
       timesheet.slideUp();
       emailPreview.slideDown();
     });
@@ -24,4 +30,6 @@ $(document).on('page:change', function(){
       timesheet.slideDown();
       emailPreview.slideUp();
     });
+
+
 });
