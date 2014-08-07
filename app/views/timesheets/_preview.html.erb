@@ -1,7 +1,7 @@
 <h1>Let's Review Your Timesheet</h1>
 
-    First name: <%= @timesheet.firstname%><br />
-    Last name:  <%= @timesheet.lastname%><br />
+    First name: <span id="firstname"></span><br>
+    Last name:  <div id="lastname"></div>
     Email:  <%= @timesheet.email%><br />
     Date:  <%= @timesheet.date%><br />
     Shift:  <%= @timesheet.day_worked%><br />
@@ -17,5 +17,3 @@
 
 <!-- <h5>Submit button</h5> -->
 <%= link_to "submit email", send_email_path %>
-
-

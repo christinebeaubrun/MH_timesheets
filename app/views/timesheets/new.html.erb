@@ -1,16 +1,18 @@
-<h1>Timesheets#new</h1>
-<h1>Let's Get You Paid</h1>
-  <%= form_for @timesheet do |f| %>
-    <% if @timesheet.errors.any? %>
-      <div id="error-explanation">
-        <h2><%= pluralize(@timesheet.errors.count, "error") %> prohibit your timesheet from being sent:</h2>
-            <ul>
-            <%= @timesheet.errors.full_messages.each do |message| %>
-              <li><%= message %></li>
-            <% end %>
-            </ul>
-      </div>
-    <% end %>
+<div id="timesheet">
+  <h1>Timesheets#new</h1>
+  <h1>Let's Get You Paid</h1>
+    <%= form_for @timesheet do |f| %>
+      <% if @timesheet.errors.any? %>
+        <div id="error-explanation">
+          <h2><%= pluralize(@timesheet.errors.count, "error") %> prohibit your timesheet from being sent:</h2>
+              <ul>
+              <%= @timesheet.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+              </ul>
+        </div>
+      <% end %>
+
     First name: <%= f.text_field :firstname%><br />
     Last name:  <%= f.text_field :lastname%><br />
     Email:  <%= f.email_field :email%><br />
@@ -25,12 +27,23 @@
     Shift pay:  <%= f.text_field :shift_pay%><br />
     Pay rate:  <%= f.text_field :pay_rate%><br />
     Grand total: <%= f.text_field :grand_total%>
-  <p>
-  <%= f.submit "Preview" %>
+    <p>
 
-  <%# if flash[:notice] %>
-    <!-- <h1><div class="notice"><%#= flash[:notice] %></div></h1> -->
-    <%#= render :partial => 'preview' %>
-  <%# end %>
-  </p>
+
+    <%# if flash[:notice] %>
+      <!-- <h1><div class="notice"><%#= flash[:notice] %></div></h1> -->
+      <%#= render :partial => 'preview' %>
+    <%# end %>
+    </p>
+
+    <%= link_to "review", '#', id: 'review'%>
+</div>
+
+
+<div id="email-preview">
+  <%= render 'preview'%>
+  <!-- <%= f.submit "Preview" %> -->
+  <%= link_to "edit", '#', id: 'edit' %>
+</div>
+
 <% end %>
