@@ -13,9 +13,12 @@ class TimesheetsController < ApplicationController
 
         ConfirmationMailer.confirmation_email(@name, @message, @email).deliver
         render :action => 'send_email'
-        # render :partial => 'preview'
+        # redirect_to root_path, success: "Email Sent, you gettin paid!"
+        # render :partial => ''
       else
-        render :action => 'new'
+        flash[:notice] = "ERRORS"
+        # redirect_to(:back) and return
+        # render :action => 'new'
       end
   end
 
