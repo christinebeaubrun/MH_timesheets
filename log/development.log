@@ -1,0 +1,169 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-07 12:53:41 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_preview.html.erb (0.3ms)
+  Rendered timesheets/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 64ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-07 12:53:41 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-07 12:53:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-07 12:53:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-07 12:53:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-07 12:53:41 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-07 12:53:41 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-07 12:53:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-07 12:53:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-07 12:53:41 -0400
+
+
+Started POST "/timesheets" for 127.0.0.1 at 2014-08-07 12:54:00 -0400
+Processing by TimesheetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aDI4BttrCq+lAnAfyoK04ntu9hvNp2cKDG6/lZtKIY0=", "timesheet"=>{"firstname"=>"", "lastname"=>"", "email"=>"", "date"=>"", "day_worked"=>"", "start_time"=>"", "hours_worked"=>"", "total_hours_worked"=>"", "subtotal_pay"=>"", "position"=>"", "work_week"=>"", "shift_pay"=>"", "pay_rate"=>"", "grand_total"=>""}, "commit"=>"Submit"}
+  Rendered timesheets/_preview.html.erb (0.0ms)
+  Rendered timesheets/create.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 33ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-07 12:54:00 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-07 12:54:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-07 12:54:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-07 12:54:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-07 12:54:00 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-07 12:54:00 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-07 12:54:00 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-07 12:54:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-07 12:54:00 -0400
+
+
+Started POST "/timesheets" for 127.0.0.1 at 2014-08-07 12:55:26 -0400
+Processing by TimesheetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aDI4BttrCq+lAnAfyoK04ntu9hvNp2cKDG6/lZtKIY0=", "timesheet"=>{"firstname"=>"Chris", "lastname"=>"Lehneis", "email"=>"cdlehneis@gmail.com", "date"=>"2014-08-21", "day_worked"=>"Night", "start_time"=>"early", "hours_worked"=>"many", "total_hours_worked"=>"very many", "subtotal_pay"=>"a lot ", "position"=>"Captain", "work_week"=>"of the century", "shift_pay"=>"123459", "pay_rate"=>"3204217", "grand_total"=>"I'm rich biotch!"}, "commit"=>"Submit"}
+  Rendered confirmation_mailer/confirmation_email.html.erb (0.6ms)
+
+ConfirmationMailer#confirmation_email: processed outbound mail in 10.3ms
+
+Sent mail to mhmailr@gmail.com (2803.3ms)
+Date: Thu, 07 Aug 2014 12:55:26 -0400
+From: mhailr@gmail.com
+To: mhmailr@gmail.com
+Message-ID: <53e3af7e9076c_5cd80c4ce008386f@christophersmbp.mail>
+Subject: Sent from MuseumHack Timesheet app!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Hi, Chris, Lehneis</h1>
+<h3>Here is your timesheet below</h3>
+
+<p>First name: Chris<br /></p>
+    <p>Last name:  Lehneis<br /></p>
+    <p>Email:  cdlehneis@gmail.com<br /></p>
+    <p>Date:  2014-08-21<br /></p>
+    <p>Shift:  Night<br /></p>
+    <p>Start time:  early<br /></p>
+    <p>Hours worked:  many<br /></p></p>
+    <p>Total hours worked:  very many<br /></p>
+    <p>Subtotal pay:  a lot <br /></p>
+    <p>Position:  Captain<br /></p>
+    <p>Work week:  of the century<br /></p>
+    <p>Shift pay:  123459<br /></p>
+    <p>Pay rate:  3204217<br /></p>
+    <p>Grand total: I&#39;m rich biotch!</p>
+
+  Rendered confirmation_mailer/confirmation_email.html.erb (0.1ms)
+
+ConfirmationMailer#confirmation_email: processed outbound mail in 9.5ms
+
+Sent mail to cdlehneis@gmail.com (2456.4ms)
+Date: Thu, 07 Aug 2014 12:55:29 -0400
+From: mhailr@gmail.com
+To: cdlehneis@gmail.com
+Message-ID: <53e3af816288b_5cd80c4ce00839fd@christophersmbp.mail>
+Subject: Sent from MuseumHack Timesheet app!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Hi, Chris, Lehneis</h1>
+<h3>Here is your timesheet below</h3>
+
+<p>First name: Chris<br /></p>
+    <p>Last name:  Lehneis<br /></p>
+    <p>Email:  cdlehneis@gmail.com<br /></p>
+    <p>Date:  2014-08-21<br /></p>
+    <p>Shift:  Night<br /></p>
+    <p>Start time:  early<br /></p>
+    <p>Hours worked:  many<br /></p></p>
+    <p>Total hours worked:  very many<br /></p>
+    <p>Subtotal pay:  a lot <br /></p>
+    <p>Position:  Captain<br /></p>
+    <p>Work week:  of the century<br /></p>
+    <p>Shift pay:  123459<br /></p>
+    <p>Pay rate:  3204217<br /></p>
+    <p>Grand total: I&#39;m rich biotch!</p>
+
+  Rendered timesheets/send_email.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5293ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-07 12:55:31 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-07 12:55:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-07 12:55:31 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-07 12:55:31 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-07 12:55:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-07 12:55:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-07 12:55:31 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-07 12:55:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-07 12:55:31 -0400

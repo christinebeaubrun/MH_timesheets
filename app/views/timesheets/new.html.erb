@@ -1,18 +1,16 @@
 <p>
-<% if flash[:notice] %>
- <!-- <h1><div class="notice"><%= flash[:notice] %></div></h1> -->
+  <% if flash[:notice] %>
      <% if @timesheet.errors.any? %>
        <div id="error-explanation">
          <h2><%= pluralize(@timesheet.errors.count, "error") %> prohibit your timesheet from being sent:</h2>
-             <ul>
-             <%= @timesheet.errors.full_messages.each do |message| %>
-               <li><%= message %></li>
-             <% end %>
-             </ul>
+         <ul>
+         <%= @timesheet.errors.full_messages.each do |message| %>
+           <li><%= message %></li>
+         <% end %>
+         </ul>
        </div>
     <% end %>
-  <%#= render :partial => 'preview' %>
-<% end %>
+  <% end %>
 </p>
 
 <div id="timesheet">
