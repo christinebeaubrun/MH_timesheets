@@ -11,23 +11,14 @@
             </ul>
       </div>
     <% end %>
-
     First name:<%= f.text_field :firstname%><br />
     Last name:<%= f.text_field :lastname%><br />
     Email:<%= f.email_field :email%><br />
-    <br /><br />
-    <div class="shiftform">
-    Shift date:<%= f.text_field :day_worked %><br />
-    Start time:<%= f.text_field :start_time %><br />
-    Hours worked:<%= f.text_field :hours_worked, class: "hours-worked" %><br />
-    Position:<%= f.text_field :position %><br />
-    Pay rate:<%= f.text_field :pay_rate, class: "pay-rate" %><br />
-    Wages for this shift:<%= f.text_field :subtotal_wages, class: "subtotal-wages" %><br />
-    </div> 
-    <div id="placeholder"></div>
+    <div class="container">
+    <div id="place_to_add_form"></div> 
     <button type="button" id="add_form_button">Add another shift</button><br />
-    
-    Grand total:<%= f.text_field :grand_total%>
+    Grand Total: <label id="timesheet_grand_total">
+  </div>
   <p>
   <%= f.submit "Preview" %>
 >>>>>>> adding bc of wierd text editor issues
