@@ -1,4 +1,5 @@
 class Timesheet
+  ROLES = ["Co-host", "Admin", "Tour Guide"]
 
   include ActiveModel::Model
   include ActiveModel::Validations
