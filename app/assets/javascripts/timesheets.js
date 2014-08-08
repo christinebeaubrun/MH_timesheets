@@ -11,7 +11,6 @@ $(document).on('page:change', function(){
         var thisId = $(this).attr('id');
         $('span[role=' + thisId + ']').text($(this).val());
       });
-
       timesheet.slideUp();
       emailPreview.slideDown();
     });
