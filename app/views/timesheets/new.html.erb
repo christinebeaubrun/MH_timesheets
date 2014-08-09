@@ -13,98 +13,142 @@
 
 <div id="timesheet">
     <%= form_for @timesheet do |f| %>
-
-      <h3>Timesheets#new</h3>
-
     <form>
       <div class="row" id="title">
-         <h1>MUSEUM HACK</h1>
+         <h1>MUSEUM<span id="red">HACK</span></h1>
       </div>
       <!-- Employee info -->
       <div class="row">
-        <div class="large-12 columns">
-          <label>First Name
-            <%= f.text_field :firstname, placeholder: "First Name", :autocomplete=> :off%>
-          </label>
+        <div class="large-9 small-centered columns">
+          <%= f.text_field :firstname, placeholder: "First Name", :autocomplete=> :off%>
         </div>
       </div>
       <div class="row">
-        <div class="large-12 columns">
-          <label>
-            <%= f.text_field :lastname, placeholder: "Last Name", :autocomplete=> :off%>
-          </label>
+        <div class="large-9 small-centered columns">
+          <%= f.text_field :lastname, placeholder: "Last Name", :autocomplete=> :off%>
         </div>
       </div>
       <div class="row">
-        <div class="large-12 columns">
+        <div class="large-9 small-centered columns">
           <label>
             <%= f.email_field :email, placeholder: "Email", :autocomplete=> :off%>
           </label>
         </div>
       </div>
+        <div class="row">
+          <div class="large-9 small-centered columns">
+            <hr>
+            <br>
+          </div>
+        </div>
       <!-- end employee info -->
-
-      <!-- ADD SHIFT BUTTON HERE -->
 
       <!-- Date/Position/StartTime -->
       <div class="row">
-        <div class="large-4 columns">
-          <div class="row collapse">
-            <div class="small-3 columns">
-              <span class="postfix">Date</span>
-            </div>
-            <div class="small-9 columns">
-              <%= f.date_field :date, placeholder: "Date", :autocomplete=> :off%>
+        <div class="large-9 small-centered columns">
+          <div class="large-4 columns">
+            <div class="row collapse">
+              <div class="small-3 columns">
+                <span class="postfix">Date</span>
+              </div>
+              <div class="small-9 columns">
+                <%= f.date_field :date, placeholder: "Date", :autocomplete=> :off%>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="large-4 columns">
-            <%= f.collection_select :position, Timesheet::ROLES, :to_s, :to_s %>
-        </div>
-        <div class="large-4 columns">
-            <%= f.text_field :start_time, placeholder: "Start Time", :autocomplete=> :off%>
+
+          <div class="large-4 columns">
+              <%= f.collection_select :position, Timesheet::ROLES, :to_s, :to_s %>
+          </div>
+          <div class="large-4 columns">
+              <%= f.text_field :start_time, placeholder: "Start Time", :autocomplete=> :off%>
+          </div>
         </div>
       </div>
       <!-- end date/position/starttime -->
 
       <!-- pay overview -->
       <div class="row">
-        <div class="large-4 columns">
-            <%= f.text_field :pay_rate, placeholder: "Pay Rate", :autocomplete=> :off%>
-        </div>
-        <div class="large-4 columns">
-            <%= f.text_field :hours_worked, placeholder: "Hours Worked", :autocomplete=> :off%>
-        </div>
-        <div class="large-4 columns">
-          SUBTOTAL
+        <div class="large-9 small-centered columns">
+          <div class="large-4 columns">
+              <%= f.text_field :pay_rate, placeholder: "Pay Rate", :autocomplete=> :off%>
+          </div>
+          <div class="large-4 columns">
+              <%= f.text_field :hours_worked, placeholder: "Hours Worked", :autocomplete=> :off%>
+          </div>
+          <div class="large-4 columns">
+            SUBTOTAL
+          </div>
         </div>
       </div>
       <!-- end pay overview -->
 
 
+      <!-- add shift button -->
       <div class="row">
-        <div class="large-6 columns">
-          <label>Grand Total
-            <%= f.text_field :grand_total, :autocomplete=> :off%>
-          </label>
+        <div class="large-3 small-centered columns">
+          <a href="#" class="button expand">Add Shift</a>
+        </div>
+      </div>
+      <!-- end add shift button -->
+      <div class="row">
+        <div class="large-9 small-centered columns">
+          <hr>
+          <br>
         </div>
       </div>
 
-      <!-- preview and submit buttons -->
       <div class="row">
-        <div class="large-6 columns">
-          <button name="review" id="review">Review</button>
-        </div>
-        <div class="large-4 columns">
-          <%= f.submit "Submit", class: "button" %>
+        <div class="small-3 small-centered columns" id="display-hours">
+          PAY PERIOD TOTAL HOURS:
+          <i class="fi-[wrench]"></i>
         </div>
       </div>
-      <!-- end preview and submit buttons -->
+      <br>
+      <div class="row">
+        <div class="small-3 small-centered columns" id="display-total">
+          PAY PERIOD GRAND TOTAL:
+        </div>
+      </div>
+      <br>
 
-    <% end %>
-    </form>
+      <div class="row">
+        <div class="large-9 small-centered columns">
+          <hr>
+          <br>
+        </div>
+      </div>
+      <!-- verification section -->
+      <div class="row">
+        <div class="large-9 small-centered columns">
+          <div class="small-4 columns">
+              <%= f.text_field :grand_total, placeholder: "Grand Total", :autocomplete=> :off%>
+          </div>
+        </div>
+      </div>
+      <!-- end verification section -->
+
+
 </div>
+
+<!-- review form -->
+
 <div id="email-preview">
   <%= render 'preview'%>
-  <button name="edit" id="edit">Back</button>
 </div>
+
+<div class="row">
+  <div "small-3 small-centered columns">
+    <div class="large-6 columns" id="hide-review">
+      <button name="review" class="button expand" id="review">Review</button>
+    </div>
+
+    <div class="large-6 columns">
+      <%= f.submit "Submit", class: "button expand" %>
+    </div>
+  </div>
+</div>
+
+
+</form>
+<% end %>

@@ -1,10 +1,54 @@
 // Place all the styles related to the timesheets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('https://sites.google.com/site/directorybesttheme/font/BebasNeue-webfont.eot');
+    src: url('https://sites.google.com/site/directorybesttheme/font/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://sites.google.com/site/directorybesttheme/font/BebasNeue-webfont.woff') format('woff'),
+         url('https://sites.google.com/site/directorybesttheme/font/BebasNeue-webfont.ttf') format('truetype'),
+         url('https://sites.google.com/site/directorybesttheme/font/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('./font/BebasNeue-webfont.eot');
+    src: url('./font/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/BebasNeue-webfont.woff') format('woff'),
+         url('./font/BebasNeue-webfont.ttf') format('truetype'),
+         url('./font/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: "bebas-neue", sans-serif;
+}
+
+
 h1 {
   text-align: center;
 }
 
-#email-preview {
+#email-preview,
+#hide-edit {
   display: none;
+}
+
+/* Gradient color1 - color2 - color1 */
+
+hr {
+height: 6px;
+background-color: gray;
+color:#FF0066;
+border: 0 none;
+margin: 5px auto;
+}
+
+#display-hours,
+#display-total {
+  border-style: solid;
+  border-width: 5px;
 }
