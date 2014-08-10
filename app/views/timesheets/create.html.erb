@@ -1,25 +1,8 @@
-<p>
-<% if flash[:notice] %>
- <!-- <h1><div class="notice"><%= flash[:notice] %></div></h1> -->
-     <% if @timesheet.errors.any? %>
-       <div id="error-explanation">
-         <h2><%= pluralize(@timesheet.errors.count, "error") %> prohibit your timesheet from being sent:</h2>
-             <ul>
-             <%= @timesheet.errors.full_messages.each do |message| %>
-               <li><%= message %></li>
-             <% end %>
-             </ul>
-       </div>
-    <% end %>
-  <%#= render :partial => 'preview' %>
-<% end %>
-</p>
-
 <div id="timesheet">
   <h1>Timesheets#new</h1>
   <h1>Let's Get You Paid</h1>
     <%= form_for @timesheet do |f| %>
-      <!-- <% if @timesheet.errors.any? %>
+      <% if @timesheet.errors.any? %>
         <div id="error-explanation">
           <h2><%= pluralize(@timesheet.errors.count, "error") %> prohibit your timesheet from being sent:</h2>
               <ul>
@@ -28,33 +11,33 @@
               <% end %>
               </ul>
         </div>
-      <% end %> -->
+      <% end %>
 
-    First name: <%= f.text_field :firstname%><br />
-    Last name:  <%= f.text_field :lastname%><br />
-    Email:  <%= f.email_field :email%><br />
-    Date:  <%= f.date_field :date%><br />
-    Shift:  <%= f.text_field :day_worked%><br />
-    Start time:  <%= f.text_field :start_time%><br />
-    Hours worked:  <%= f.text_field :hours_worked%><br />
-    Total hours worked:  <%= f.text_field :total_hours_worked%><br />
-    Subtotal pay:  <%= f.text_field :subtotal_pay%><br />
-    Position:  <%= f.text_field :position%><br />
-    Work week:  <%= f.text_field :work_week%><br />
-    Shift pay:  <%= f.text_field :shift_pay%><br />
-    Pay rate:  <%= f.text_field :pay_rate%><br />
-    Grand total: <%= f.text_field :grand_total%><br />
+    First name: <%= f.text_field :firstname, :required => true%><br />
+    Last name:  <%= f.text_field :lastname, :required => true%><br />
+    Email:  <%= f.email_field :email, :required => true%><br />
+    Date:  <%= f.date_field :date, :required => true%><br />
+    Shift:  <%= f.text_field :day_worked, :required => true%><br />
+    Start time:  <%= f.text_field :start_time, :required => true%><br />
+    Hours worked:  <%= f.text_field :hours_worked, :required => true%><br />
+    Total hours worked:  <%= f.text_field :total_hours_worked, :required => true%><br />
+    Subtotal pay:  <%= f.text_field :subtotal_pay, :required => true%><br />
+    Position:  <%= f.text_field :position, :required => true%><br />
+    Work week:  <%= f.text_field :work_week, :required => true%><br />
+    Shift pay:  <%= f.text_field :shift_pay, :required => true%><br />
+    Pay rate:  <%= f.text_field :pay_rate, :required => true%><br />
+    Grand total: <%= f.text_field :grand_total, :required => true%><br />
 
     <button name="review" id="review">Review</button>
-    <!-- <%= link_to "review", '#', id: 'review'%> -->
+    <!-- <%#= link_to "review", '#', id: 'review'%> -->
 
 </div>
 
 <div id="email-preview">
   <%= render 'preview'%><br>
-  <button name="edit" id="edit">Edit</button>
-  <!-- <%= link_to "edit", '#', id: 'edit' %> -->
-  <%= f.submit "Submit" %>
+  <button name="edit" id="edit">Back</button>
+  <!-- <%#= link_to "edit", '#', id: 'edit' %> -->
 </div>
+    <%= f.submit "Submit" %>
 
 <% end %>
