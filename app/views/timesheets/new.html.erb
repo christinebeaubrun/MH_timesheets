@@ -1,76 +1,40 @@
 <h1>Timesheets#new</h1>
 <h1>Let's Get You Paid</h1>
+<div id="validations">
+ <% if @timesheet.errors.any? %>
+ <div id="error-explanation">
+   <h2><%= pluralize(@timesheet.errors.count, "error") %> prohibit your timesheet from being sent:</h2>
+   <ul>
+     <% @timesheet.errors.full_messages.each do |message| %>
+     <li><%= message %></li>
+     <% end %>
+   </ul>
+ </div>
+ <% end %>
+</div>
+<div id="timesheet">
+
+
   <%= form_for @timesheet do |f| %>
-    <% if @timesheet.errors.any? %>
-      <div id="error-explanation">
-        <h2><%= pluralize(@timesheet.errors.count, "error") %> prohibit your timesheet from being sent:</h2>
-            <ul>
-            <%= @timesheet.errors.full_messages.each do |message| %>
-              <li><%= message %></li>
-            <% end %>
-            </ul>
-      </div>
-    <% end %>
-    First name:<%= f.text_field :firstname%><br />
-    Last name:<%= f.text_field :lastname%><br />
-    Email:<%= f.email_field :email%><br />
-    <div class="container">
+
+  First name:<%= f.text_field :firstname%><br />
+  Last name:<%= f.text_field :lastname%><br />
+  Email:<%= f.email_field :email%><br />
+  <div class="container">
     <div id="place_to_add_form"></div> 
     <button type="button" id="add_form_button">Add another shift</button><br />
     Total Hours: <label id="timesheet_total_hours" name="timesheet[total_hours]"></label><br>
     Grand Total: <label id="timesheet_grand_total" name="timesheet[grand_total]"></label>
   </div>
   <p>
-  <%= f.submit "Preview" %>
->>>>>>> adding bc of wierd text editor issues
 
-<div id="validations">
-   <% if @timesheet.errors.any? %>
-     <div id="error-explanation">
-       <h2><%= pluralize(@timesheet.errors.count, "error") %> prohibit your timesheet from being sent:</h2>
-       <ul>
-       <% @timesheet.errors.full_messages.each do |message| %>
-         <li><%= message %></li>
-       <% end %>
-       </ul>
-     </div>
-  <% end %>
-</div>
-<div id="timesheet">
-  <h1>Timesheets#new</h1>
-  <h1>Let's Get You Paid</h1>
-    <%= form_for @timesheet do |f| %>
-
-    First name: <%= f.text_field :firstname, :autocomplete=> :off, :required => true%><br />
-    Last name:  <%= f.text_field :lastname, :autocomplete=> :off, :required => true%><br />
-    Email:  <%= f.email_field :email, :autocomplete=> :off, :required => true%><br />
-    Date:  <%= f.date_field :date, :autocomplete=> :off, :required => true%><br />
-    Shift:  <%= f.text_field :day_worked, :autocomplete=> :off, :required => true%><br />
-    Start time:  <%= f.text_field :start_time, :autocomplete=> :off, :required => true%><br />
-    Hours worked:  <%= f.text_field :hours_worked, :autocomplete=> :off, :required => true%><br />
-    Total hours worked:  <%= f.text_field :total_hours_worked, :autocomplete=> :off, :required => true%><br />
-    Subtotal pay:  <%= f.text_field :subtotal_pay, :autocomplete=> :off, :required => true%><br />
-    Position:  <%= f.text_field :position, :autocomplete=> :off, :required => true%><br />
-    Work week:  <%= f.text_field :work_week, :autocomplete=> :off, :required => true%><br />
-    Shift pay:  <%= f.text_field :shift_pay, :autocomplete=> :off, :required => true%><br />
-    Pay rate:  <%= f.text_field :pay_rate, :autocomplete=> :off, :required => true%><br />
-    Grand total: <%= f.text_field :grand_total, :autocomplete=> :off, :required => true%><br />
 
     <button name="review" id="review">Review</button>
-    <!-- <%#= link_to "review", '#', id: 'review'%> -->
 
-</div>
+  </div>
 
-<div id="email-preview">
-  <%= render 'preview'%><br>
-<!-- <<<<<<< HEAD
-  <button name="edit" id="edit">Back</button>
-  <!-- <%#= link_to "edit", '#', id: 'edit' %> -->
-<!-- </div>
-    <%#= f.submit "Submit" %> -->
-  <button name="edit" id="edit">Edit</button>
-  <!-- <%= link_to "edit", '#', id: 'edit' %> -->
-
-</div>
+  <div id="email-preview">
+    <%= render 'preview'%><br>
+  </div>
   <%= f.submit "Submit" %>
-<% end %>
+  <% end %>
