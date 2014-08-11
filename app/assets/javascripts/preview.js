@@ -9,7 +9,7 @@ $(document).on('page:change', function(){
   review.on('click', function(event){
     event.preventDefault();
     var shiftPartial = [
-    'Date:  <span role="date"></span><br />',
+    '<br />Date:  <span role="date"></span><br />',
     'Start time:  <span role="start_time"></span><br />', 
     'Hours worked:  <span role="hours"></span><br />',
     'Position:  <span role="position"></span><br />',
@@ -20,12 +20,13 @@ $(document).on('page:change', function(){
 
       $.each($('.shift'), function(){
         $('.append_shift').append(shiftPartial);
-
+        //use $(this).find n
         // iterate over formsheet inputs
         $('#new_timesheet input').each(function(){
           var thisClass = $(this).attr('class');
           $('span[role=' + thisClass + ']').text($(this).val());
         });
+
         $('#new_timesheet label').each(function(){
           var thisClass = $(this).attr('class');
           $('span[role=' + thisClass + ']').text($(this).text());
