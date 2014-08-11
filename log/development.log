@@ -3744,4 +3744,1292 @@ Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-10 20:07:48 
 Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-10 20:07:48 -0400
 
 
+<<<<<<< HEAD
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-10 20:07:48 -0400
+=======
+Started POST "/timesheets" for 127.0.0.1 at 2014-08-06 16:26:08 -0400
+Processing by TimesheetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+6PnebMuOyuT5ah0EX+SZ/mYjF18EfVtZQR8tYzYML4=", "timesheet"=>{"firstname"=>"skdlksja", "lastname"=>"lkafd", "email"=>"klajdf@gmail.com", "date"=>"2014-01-01", "day_worked"=>"lksjlj", "start_time"=>"lkajf", "hours_worked"=>"lakfj", "total_hours_worked"=>"lakfj", "total_pay"=>"klajf", "position"=>"alkfj", "work_week"=>"akljf", "shift_pay"=>"lakjf", "pay_rate"=>"lakj", "grand_total"=>"alkfj"}, "commit"=>"Preview"}
+  Rendered timesheets/_preview.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:12:47 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 41ms
+
+ActionView::Template::Error (undefined method `firstname' for #<Timesheet:0x007fa7510285f0>):
+    11:             </ul>
+    12:       </div>
+    13:     <% end %>
+    14:     First name: <%= f.text_field :firstname%><br />
+    15:     Last name:  <%= f.text_field :lastname%><br />
+    16:     Email:  <%= f.email_field :email%><br />
+    17:     
+  app/views/timesheets/new.html.erb:14:in `block in _app_views_timesheets_new_html_erb___1257676231270493285_70178284918020'
+  app/views/timesheets/new.html.erb:3:in `_app_views_timesheets_new_html_erb___1257676231270493285_70178284918020'
+
+
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:13:39 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `subtotal_pay' for #<Timesheet:0x007fa74f370ca0>):
+    21:     Hours worked:  <%= @timesheet.hours_worked%><br />
+    22:     Position:  <%= @timesheet.position%><br />
+    23:     Pay rate:  <%= @timesheet.pay_rate%><br />
+    24:     Wages for this shift:  <%= @timesheet.subtotal_pay%><br />
+    25:     <button type="button">Add another shift</button><br />
+    26:     </div> 
+    27: 
+  app/views/timesheets/new.html.erb:24:in `block in _app_views_timesheets_new_html_erb___1257676231270493285_70178284918020'
+  app/views/timesheets/new.html.erb:3:in `_app_views_timesheets_new_html_erb___1257676231270493285_70178284918020'
+
+
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:13:41 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `subtotal_pay' for #<Timesheet:0x007fa74d907828>):
+    21:     Hours worked:  <%= @timesheet.hours_worked%><br />
+    22:     Position:  <%= @timesheet.position%><br />
+    23:     Pay rate:  <%= @timesheet.pay_rate%><br />
+    24:     Wages for this shift:  <%= @timesheet.subtotal_pay%><br />
+    25:     <button type="button">Add another shift</button><br />
+    26:     </div> 
+    27: 
+  app/views/timesheets/new.html.erb:24:in `block in _app_views_timesheets_new_html_erb___1257676231270493285_70178284918020'
+  app/views/timesheets/new.html.erb:3:in `_app_views_timesheets_new_html_erb___1257676231270493285_70178284918020'
+
+
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:13:57 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:13:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:13:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:13:57 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:13:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:13:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:13:57 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:13:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:13:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:15:03 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:15:04 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:15:04 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:15:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:15:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:15:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:15:04 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:15:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:15:04 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:19:10 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 41ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:19:10 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:19:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:19:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:19:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:19:11 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:19:11 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:19:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:19:11 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:20:57 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:20:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:20:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:20:57 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:20:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:20:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:20:57 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:20:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:20:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:21:19 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:21:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:21:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:19 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:21:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:19 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:19 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:21:29 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:21:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:21:30 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:21:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:30 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:30 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:21:39 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:21:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:21:39 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:21:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:39 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:39 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:21:56 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:21:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:56 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:21:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:21:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:56 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:21:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:26:00 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:00 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:00 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:00 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:26:14 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 58ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:15 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:15 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:15 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:15 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:26:16 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:16 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:16 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:16 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:26:34 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 41ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:34 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:34 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:34 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:34 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:34 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:26:38 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:38 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:26:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:38 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:26:38 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:27:11 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:27:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:27:12 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:27:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:27:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:27:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:27:12 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:27:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:27:12 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:28:56 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:28:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:28:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:28:56 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:28:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:28:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:28:56 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:28:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:28:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:29:28 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:29:28 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:29:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:29:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:29:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:29:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:29:28 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:29:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:29:28 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:30:28 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 42ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:30:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:29 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:30:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:30:29 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:29 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:30:47 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:30:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:30:47 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:30:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:47 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:47 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:30:53 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:30:53 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:30:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:53 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:53 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:30:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:53 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:30:57 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:30:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:58 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:30:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:30:58 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:30:58 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:32:07 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:32:07 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:32:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:32:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:32:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:32:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:32:07 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:32:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:32:07 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:32:17 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:32:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:32:17 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:32:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:32:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:32:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:32:17 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:32:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:32:17 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:37:00 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `merge' for "Shift date:":String):
+    16:     Email:  <%= f.email_field :email%><br />
+    17:     
+    18:      <div id="shift">
+    19:     <%= f.text_field :day_worked, "Shift date:"  %><br />
+    20:     Start time:  <%= f.text_field :start_time%><br />
+    21:     Hours worked:  <%= f.text_field :hours_worked%><br />
+    22:     Position:  <%= f.text_field :position%><br />
+  app/views/timesheets/new.html.erb:19:in `block in _app_views_timesheets_new_html_erb__4013571601261264319_70363561001280'
+  app/views/timesheets/new.html.erb:3:in `_app_views_timesheets_new_html_erb__4013571601261264319_70363561001280'
+
+
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:37:09 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `merge' for :day_worked:Symbol):
+    16:     Email:  <%= f.email_field :email%><br />
+    17:     
+    18:      <div id="shift">
+    19:     <%= f.text_field "Shift date:", :day_worked  %><br />
+    20:     Start time:  <%= f.text_field :start_time%><br />
+    21:     Hours worked:  <%= f.text_field :hours_worked%><br />
+    22:     Position:  <%= f.text_field :position%><br />
+  app/views/timesheets/new.html.erb:19:in `block in _app_views_timesheets_new_html_erb__4013571601261264319_70363525904620'
+  app/views/timesheets/new.html.erb:3:in `_app_views_timesheets_new_html_erb__4013571601261264319_70363525904620'
+
+
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/aprilrabkin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:37:32 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:37:32 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:37:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:37:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:37:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:37:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:37:32 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:37:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:37:32 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:37:56 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:37:56 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:37:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:37:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:37:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:37:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:37:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:37:56 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:37:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:38:15 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 38ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:15 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:15 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:15 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:38:27 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:28 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:28 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:28 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:38:37 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:37 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:37 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:37 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:37 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:38:49 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:49 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:49 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:49 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:49 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:49 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:38:57 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:57 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:57 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:38:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:57 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:38:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:39:07 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:39:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:39:07 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:39:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:39:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:39:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:39:07 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:39:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:39:07 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:41:21 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:41:21 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:41:21 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:41:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:41:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:41:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:41:21 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:41:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:41:21 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:41:56 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:41:56 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:41:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:41:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:41:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:41:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:41:56 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:41:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:41:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:42:36 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:42:36 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:42:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:42:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:42:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:42:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:42:36 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:42:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:42:36 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:43:19 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:43:19 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:43:19 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:43:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:43:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:43:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:43:19 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:43:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:43:19 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:44:54 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:44:54 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:44:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:44:54 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:44:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:44:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:44:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:44:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:44:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:49:55 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:49:55 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:49:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:49:55 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:49:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:49:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:49:55 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:49:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:49:55 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:51:51 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:51:51 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:51:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:51:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:51:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:51:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:51:51 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:51:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:51:51 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:51:52 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:51:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:51:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:51:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:51:52 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:51:52 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:51:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:51:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:51:52 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 17:54:27 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-06 17:54:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 17:54:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 17:54:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 17:54:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 17:54:28 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-06 17:54:28 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-06 17:54:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 17:54:28 -0400
+>>>>>>> set up button to add form for each shift

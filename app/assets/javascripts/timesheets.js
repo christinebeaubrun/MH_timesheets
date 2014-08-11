@@ -1,3 +1,4 @@
+
 $(document).on('page:change', function(){
     var review = $('#review'),
         edit = $('#edit'),
