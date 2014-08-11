@@ -19,7 +19,6 @@ $(document).ready(function(){
   }
 
   appendForm();
-  console.log('one appendForm was called');
   
   $('#add_form_button').click(function(){
     appendForm();
