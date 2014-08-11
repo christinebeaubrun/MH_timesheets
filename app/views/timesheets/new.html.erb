@@ -1,3 +1,9 @@
+<div class="large-12 large-centered columns" id="mhlogo">
+  <br>
+  <%= render 'mhlogo' %>
+  <br>
+  <br>
+</div>
 <div id="validations">
    <% if @timesheet.errors.any? %>
      <div id="error-explanation">
@@ -11,144 +17,150 @@
   <% end %>
 </div>
 
-<div id="timesheet">
-    <%= form_for @timesheet do |f| %>
-    <form>
-      <div class="row" id="title">
-         <h1>MUSEUM<span id="red">HACK</span></h1>
+<div class="large-5 large-centered columns" id="sheet">
+  <div id="timesheet">
+    <br>
+    <br>
+  <%= form_for @timesheet do |f| %>
+    <!-- Employee info -->
+    <div class="row">
+      <div class="large-6 columns">
+        <%= f.text_field :firstname, placeholder: "First Name" %>
       </div>
-      <!-- Employee info -->
-      <div class="row">
-        <div class="large-9 small-centered columns">
-          <%= f.text_field :firstname, placeholder: "First Name", :autocomplete=> :off%>
-        </div>
+      <div class="large-6 columns">
+        <%= f.text_field :lastname, placeholder: "Last Name" %>
       </div>
-      <div class="row">
-        <div class="large-9 small-centered columns">
-          <%= f.text_field :lastname, placeholder: "Last Name", :autocomplete=> :off%>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-9 small-centered columns">
-          <label>
-            <%= f.email_field :email, placeholder: "Email", :autocomplete=> :off%>
-          </label>
-        </div>
-      </div>
-        <div class="row">
-          <div class="large-9 small-centered columns">
-            <hr>
-            <br>
-          </div>
-        </div>
-      <!-- end employee info -->
+    </div>
 
-      <!-- Date/Position/StartTime -->
-      <div class="row">
-        <div class="large-9 small-centered columns">
-          <div class="large-4 columns">
-            <div class="row collapse">
-              <div class="small-3 columns">
-                <span class="postfix">Date</span>
-              </div>
-              <div class="small-9 columns">
-                <%= f.date_field :date, placeholder: "Date", :autocomplete=> :off%>
-              </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <%= f.email_field :email, placeholder: "Email"%>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 large-centered columns">
+        <hr>
+      </div>
+    </div>
+    <!-- end employee info -->
+
+    <div class="row">
+      <div class="large-6 large-centered columns" id="shift_info">
+        <%= render 'shiftinfo' %>
+      </div>
+    </div>
+    <br>
+
+    <!-- Date/StartTime -->
+    <div class="row">
+        <div class="large-6 columns">
+          <div class="row collapse">
+            <div class="large-3 columns">
+              <span class="prefix">date</span>
+            </div>
+            <div class="large-9 columns">
+              <%= f.date_field :date %>
             </div>
           </div>
-
-          <div class="large-4 columns">
-              <%= f.collection_select :position, Timesheet::ROLES, :to_s, :to_s %>
-          </div>
-          <div class="large-4 columns">
-              <%= f.text_field :start_time, placeholder: "Start Time", :autocomplete=> :off%>
-          </div>
         </div>
-      </div>
-      <!-- end date/position/starttime -->
-
-      <!-- pay overview -->
-      <div class="row">
-        <div class="large-9 small-centered columns">
-          <div class="large-4 columns">
-              <%= f.text_field :pay_rate, placeholder: "Pay Rate", :autocomplete=> :off%>
-          </div>
-          <div class="large-4 columns">
-              <%= f.text_field :hours_worked, placeholder: "Hours Worked", :autocomplete=> :off%>
-          </div>
-          <div class="large-4 columns">
-            SUBTOTAL
-          </div>
-        </div>
-      </div>
-      <!-- end pay overview -->
-
-
-      <!-- add shift button -->
-      <div class="row">
-        <div class="large-3 small-centered columns">
-          <a href="#" class="button expand">Add Shift</a>
-        </div>
-      </div>
-      <!-- end add shift button -->
-      <div class="row">
-        <div class="large-9 small-centered columns">
-          <hr>
-          <br>
+        <div class="large-6 columns">
+          <%= f.text_field :start_time, placeholder: "Start Time"%>
         </div>
       </div>
 
-      <div class="row">
-        <div class="small-3 small-centered columns" id="display-hours">
-          PAY PERIOD TOTAL HOURS:
-          <i class="fi-[wrench]"></i>
-        </div>
+    <!-- end date/starttime -->
+
+    <!-- pay position and rate -->
+    <div class="row">
+      <div class="large-6 columns">
+        <%= f.collection_select :position, Timesheet::ROLES, :to_s, :to_s %>
       </div>
-      <br>
-      <div class="row">
-        <div class="small-3 small-centered columns" id="display-total">
-          PAY PERIOD GRAND TOTAL:
-        </div>
+      <div class="large-6 columns">
+          <%= f.text_field :pay_rate, placeholder: "Pay Rate" %>
       </div>
-      <br>
+    </div>
+    <!-- pay position/rate end -->
 
-      <div class="row">
-        <div class="large-9 small-centered columns">
-          <hr>
-          <br>
-        </div>
+    <!-- hours worked and subtotal  -->
+    <div class="row">
+      <div class="large-6 columns">
+          <%= f.text_field :hours_worked, placeholder: "Hours Worked" %>
       </div>
-      <!-- verification section -->
-      <div class="row">
-        <div class="large-9 small-centered columns">
-          <div class="small-4 columns">
-              <%= f.text_field :grand_total, placeholder: "Grand Total", :autocomplete=> :off%>
-          </div>
-        </div>
+      <div class="large-6 columns">
+        <%= f.text_field :hours_worked, placeholder: "Subtotal" %>
       </div>
-      <!-- end verification section -->
-
-
-</div>
-
-<!-- review form -->
-
-<div id="email-preview">
-  <%= render 'preview'%>
-</div>
-
-<div class="row">
-  <div "small-3 small-centered columns">
-    <div class="large-6 columns" id="hide-review">
-      <button name="review" class="button expand" id="review">Review</button>
     </div>
 
-    <div class="large-6 columns">
-      <%= f.submit "Submit", class: "button expand" %>
+    <!-- end hours worked and subtotal -->
+
+
+    <!-- add shift button -->
+    <div class="row">
+      <div class="large-6 large-centered columns">
+        <div class="large-6 columns">
+          <a href="#"><%= render 'add_shift' %></a>
+        </div>
+        <div class="large-6 columns">
+          <a href="#"><%= render 'remove_shift'%></a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="large-4 large-offset-4 columns">
+        <a href="#" class="button expand">Add Shift</a>
+      </div>
+    </div> -->
+    <!-- end add shift button -->
+
+
+    <div class="row">
+      <div class="large-12 columns">
+        <hr>
+      </div>
+    </div>
+
+    <!-- verification section -->
+
+   <div class="row">
+     <div class="large-6 large-centered columns">
+       <%= render 'grand_total' %>
+     </div>
+   </div>
+
+    <div class="row">
+      <div class="large-6 large-centered columns">
+        <%= f.text_field :grand_total, placeholder: "Total Hours"%>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 large-centered columns">
+        <%= f.text_field :grand_total, readonly: true %>
+      </div>
+    </div>
+    <!-- end verification section -->
+  </div>
+
+  <!-- review form -->
+
+  <div id="email-preview">
+    <%= render 'preview'%>
+  </div>
+
+  <div class="row">
+    <div "large-6 large-centered columns">
+      <div class="large-6 columns" id="hide-review">
+        <button name="review" class="button expand" id="review">Review</button>
+      </div>
+      <div class="large-6 columns">
+        <%= f.submit "Submit", class: "button expand" %>
+      </div>
     </div>
   </div>
+
+
+  <% end %>
+
 </div>
-
-
-</form>
-<% end %>
+<br>
+<br>
