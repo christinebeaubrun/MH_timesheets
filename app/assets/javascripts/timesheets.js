@@ -31,12 +31,12 @@ $(document).ready(function(){
   
   form = [
   '<div class="shift"><br><a>Shift:</a><br>',
-  'Date of shift: <input type="text"><br>',
-  'Start time: <input type="text"><br>',
-  'Position: <input type="text"><br>', //needs a name or an id? name...
-  'Rate per hour: <input type="text" class="rate"></br>',
-  'Hours this shift: <input type="text" class="hours"></br>',
-  'Subtotal: <label class="subtotal"></div>',
+  'Date of shift: <input type="text" name="timesheet[shifts][][date]"><br>',
+  'Start time: <input type="text" name="timesheet[shifts][][start_time]"><br>',
+  'Position: <input type="text" name="timesheet[shifts][][position]"><br>', //needs a name or an id? name...
+  'Rate per hour: <input type="text" class="rate" name="timesheet[shifts][][pay_rate]"></br>',
+  'Hours this shift: <input type="text" class="hours" name="timesheet[shifts][][hours_worked]"></br>',
+  'Subtotal: <label class="subtotal" name="timesheet[shifts][][subtotal]"></div>',
   ];
 
   function appendForm() {
