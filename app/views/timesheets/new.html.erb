@@ -12,27 +12,20 @@
  </div>
  <% end %>
 </div>
+
 <div id="timesheet">
-
-
   <%= form_for @timesheet do |f| %>
-
   First name:<%= f.text_field :firstname%><br />
   Last name:<%= f.text_field :lastname%><br />
   Email:<%= f.email_field :email%><br />
-  <div class="container">
-    <div id="place_to_add_form"></div> 
-    <button type="button" id="add_form_button">Add another shift</button><br />
-    Total Hours: <label id="timesheet_total_hours" name="timesheet[total_hours]"></label><br>
-    Grand Total: <label id="timesheet_grand_total" name="timesheet[grand_total]"></label>
-  </div>
-  <p>
-
-
+    <div class="container">
+      <div id="place_to_add_form"></div> 
+      <button type="button" id="add_form_button">Add another shift</button><br />
+      Total Hours: <label id="timesheet_total_hours" name="timesheet[total_hours]"></label><br>
+      Grand Total: <label id="timesheet_grand_total" name="timesheet[grand_total]"></label>
+    </div>
     <button name="review" id="review">Review</button>
-
-  </div>
-
+</div>
   <div id="email-preview">
     <%= render 'preview'%><br>
   </div>

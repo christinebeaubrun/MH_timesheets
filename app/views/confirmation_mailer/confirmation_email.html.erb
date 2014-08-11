@@ -4,14 +4,11 @@
 <p>First name: <%= @message.firstname%><br /></p>
     <p>Last name:  <%= @message.lastname%><br /></p>
     <p>Email:  <%= @message.email%><br /></p>
-    <p>Date:  <%= @message.date%><br /></p>
-    <p>Shift:  <%= @message.day_worked%><br /></p>
+    <p>Shift date:  <%= @message.date%><br /></p>
     <p>Start time:  <%= @message.start_time%><br /></p>
     <p>Hours worked:  <%= @message.hours_worked%><br /></p></p>
-    <p>Total hours worked:  <%= @message.total_hours_worked%><br /></p>
-    <p>Subtotal pay:  <%= @message.subtotal_pay%><br /></p>
     <p>Position:  <%= @message.position%><br /></p>
-    <p>Work week:  <%= @message.work_week%><br /></p>
-    <p>Shift pay:  <%= @message.shift_pay%><br /></p>
     <p>Pay rate:  <%= @message.pay_rate%><br /></p>
+    <p>Wages this shift:  <%= @message.subtotal%><br /></p>
+    <p>Total hours worked:  <%= @message.total_hours%><br /></p>
     <p>Grand total: <%= @message.grand_total%></p>

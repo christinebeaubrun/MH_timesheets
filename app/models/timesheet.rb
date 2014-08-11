@@ -6,7 +6,7 @@ class Timesheet
   extend ActiveModel::Naming
 
 
- attr_accessor :firstname, :lastname, :email, :day_worked, :start_time, :hours_worked, :position, :pay_rate, :shift_pay, :grand_total, :subtotal_pay, :total_hours 
+ attr_accessor :firstname, :lastname, :email, :date, :start_time, :hours_worked, :position, :pay_rate, :grand_total, :subtotal, :total_hours, :shifts
 
   # validates_presence_of :firstname, :lastname, :start_time, :position, :work_week, :day_worked,
   #                       :hours_worked, :total_hours_worked, :shift_pay, :pay_rate, :grand_total, :email, :subtotal_wages, :start_time
