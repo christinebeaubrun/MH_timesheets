@@ -3,15 +3,20 @@
 $(document).on('page:change', function(){
     var review = $('#review'),
         edit = $('#edit'),
-        timesheet = $('#timesheet'),
+        timesheet = $('#new_timesheet'),
         emailPreview = $('#email-preview');
 
     review.on('click', function(event){
+
       event.preventDefault();
       // iterate over formsheet inputs and associate the values to their divs
       $('form#new_timesheet input').each(function(){
-        var thisId = $(this).attr('id');
-        $('span[role=' + thisId + ']').text($(this).val());
+        var thisClass = $(this).attr('class');
+        $('span[role=' + thisClass + ']').text($(this).val());
+      });
+      $('form#new_timesheet label').each(function(){
+        var thisClass = $(this).attr('class');
+        $('span[role=' + thisClass + ']').text($(this).text());
       });
       timesheet.slideUp();
       emailPreview.slideDown();
@@ -31,12 +36,12 @@ $(document).ready(function(){
   
   form = [
   '<div class="shift"><br><a>Shift:</a><br>',
-  'Date of shift: <input type="text" name="timesheet[shifts][][date]"><br>',
-  'Start time: <input type="text" name="timesheet[shifts][][start_time]"><br>',
-  'Position: <input type="text" name="timesheet[shifts][][position]"><br>', //needs a name or an id? name...
+  'Date of shift: <input type="text" class="date" name="timesheet[shifts][][date]"><br>',
+  'Start time: <input type="text" class="start_time" name="timesheet[shifts][][start_time]"><br>',
+  'Position: <input type="text" class="position" name="timesheet[shifts][][position]"><br>', //needs a name or an id? name...
   'Rate per hour: <input type="text" class="rate" name="timesheet[shifts][][pay_rate]"></br>',
   'Hours this shift: <input type="text" class="hours" name="timesheet[shifts][][hours_worked]"></br>',
-  'Subtotal: <label class="subtotal" name="timesheet[shifts][][subtotal]"></div>',
+  'Subtotal: <label class="subtotal" class="subtotal" name="timesheet[shifts][][subtotal]"></div>',
   ];
 
   function appendForm() {
