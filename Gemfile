@@ -11,7 +11,6 @@ gem 'rails_12factor'
 gem 'pg', '~> 0.17.1'
 gem 'heroku'
 gem 'better_errors', '~> 1.1.0'
-gem 'unicorn'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
