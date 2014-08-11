@@ -19,7 +19,7 @@ class TimesheetsController < ApplicationController
 
         render :action => 'send_email'
       else
-        flash[:notice] = "ERRORS"
+        render :new
       end
   end
 end
