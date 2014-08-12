@@ -6,9 +6,9 @@ class Timesheet
   extend ActiveModel::Naming
 
 
-  attr_accessor :firstname, :lastname, :email, :date, :start_time, :hours_worked, :position, :pay_rate, :grand_total, :subtotal, :total_hours, :shifts
+  attr_accessor :firstname, :lastname, :email, :date, :start_time, :hours_worked, :position, :pay_rate, :grand_total, :subtotal, :shifts
 
-  validates_presence_of :firstname, :lastname, :email, :start_time, :hours_worked, :position, :pay_rate, :grand_total, :subtotal, :total_hours, :shifts
+  validates_presence_of :firstname, :lastname, :email, :date, :start_time, :hours_worked, :position, :pay_rate, :grand_total, :subtotal, :shifts
 
   def initialize(attributes = {})
     attributes.each do |name, value|
