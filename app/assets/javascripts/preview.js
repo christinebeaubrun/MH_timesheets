@@ -27,7 +27,7 @@ $(document).on('page:change', function(){
     'Hours worked:  <span role="hours"></span><br />',
     'Position:  <span role="position"></span><br />',
     'Pay rate:  <span role="rate"></span><br />',
-    'Subtotal pay:  <span role="subtotal"></span><br /><br /></div>'
+    'Subtotal pay:  <span role="subtotal"></span><br /></div>'
     ]; 
 
     $.each($('.shift'), function(index, shift){
