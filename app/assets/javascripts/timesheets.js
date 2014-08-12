@@ -14,7 +14,7 @@ $(document).on('page:change', function(){
         var thisId = $(this).attr('id');
         $('span[role=' + thisId + ']').text($(this).val());
       });
-      
+
       $('#hide-review').hide();
       timesheet.slideUp();
       hideEdit.slideDown();
