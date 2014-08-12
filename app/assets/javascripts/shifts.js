@@ -17,4 +17,8 @@ $(document).on('page:change', function(){
       shiftCount++;
     }
   });
+
+  $(removeShift).on('click', function(event){
+    event.preventDefault();
+  });
 });
