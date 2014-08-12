@@ -6,21 +6,21 @@ $(document).on('page:change', function(){
 
   review.on('click', function(event){
     event.preventDefault();
-    var shiftPartial = [
-    '<br />Date:  <span role="date"></span><br />',
-    'Start time:  <span role="start_time"></span><br />',
-    'Hours worked:  <span role="hours"></span><br />',
-    'Position:  <span role="position"></span><br />',
-    'Pay rate:  <span role="rate"></span><br />',
-    'Subtotal pay:  <span role="subtotal"></span><br /><br /></div>'
-    ];
+    // var shiftPartial = [
+    // '<br />Date:  <span role="date"></span><br />',
+    // 'Start time:  <span role="start_time"></span><br />',
+    // 'Hours worked:  <span role="hours"></span><br />',
+    // 'Position:  <span role="position"></span><br />',
+    // 'Pay rate:  <span role="rate"></span><br />',
+    // 'Subtotal pay:  <span role="subtotal"></span><br /><br /></div>'
+    // ];
 
 
     $.each($('.shift'), function(index, shift){
       var thisPartialDiv = "<div class='partial" + index + "'>";
       var thisPartialDivClass = ".partial" + index;
 
-      $('.append_shift').append(thisPartialDiv + shiftPartial.join("\n"));
+      // $('.append_shift').append(thisPartialDiv + shiftPartial.join("\n"));
 
       ($(this).find($('#new_timesheet input'))).each(function(){
         var thisRow = $(this).attr('class');
