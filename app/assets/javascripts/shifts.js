@@ -1,6 +1,6 @@
 
 
-$(document).ready(function(){
+$(document).on('page:change', function(){
 
   var form;
   
@@ -38,7 +38,6 @@ $(document).ready(function(){
     subtotalElement.text(subtotalNumber);
 
     (function(){
-      console.log('subTotal calculation was called');
     })();
 
   });
@@ -77,8 +76,7 @@ $(document).ready(function(){
     $('.hours').each(function(index, elem){
       var h = parseFloat($(elem).val());
       console.log(h);
-      if (h){
-        console.log("totalhours was called");       
+      if (h){     
         totalHoursValue += h;
       }
       totalHoursElement.text(totalHoursValue);

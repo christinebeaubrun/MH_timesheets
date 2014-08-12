@@ -8,7 +8,7 @@ $(document).on('page:change', function(){
 
   review.on('click', function(event){
     event.preventDefault();
-   var shiftPartial = [
+    var shiftPartial = [
     '<br />Date:  <span role="date"></span><br />',
     'Start time:  <span role="start_time"></span><br />', 
     'Hours worked:  <span role="hours"></span><br />',
@@ -18,31 +18,31 @@ $(document).on('page:change', function(){
     ]; 
 
 
-      $.each($('.shift'), function(index, shift){
-        var thisPartialDiv = "<div class='partial" + index + "'>";
-        var thisPartialDivClass = ".partial" + index; 
+    $.each($('.shift'), function(index, shift){
+      var thisPartialDiv = "<div class='partial" + index + "'>";
+      var thisPartialDivClass = ".partial" + index; 
 
-        $('.append_shift').append(thisPartialDiv + shiftPartial.join("\n"));
+      $('.append_shift').append(thisPartialDiv + shiftPartial.join("\n"));
 
-        ($(this).find($('#new_timesheet input'))).each(function(){
-          var thisRow = $(this).attr('class');
-          $(thisPartialDivClass).find($('span[role=' + thisRow + ']')).text($(this).val());
-        });
-
-        ($(this).find($('#new_timesheet label'))).each(function(){
-          var thisRow = $(this).attr('class');
-          $(thisPartialDivClass).find($('span[role=' + thisRow + ']')).text($(this).text());
-        });
+      ($(this).find($('#new_timesheet input'))).each(function(){
+        var thisRow = $(this).attr('class');
+        $(thisPartialDivClass).find($('span[role=' + thisRow + ']')).text($(this).val());
       });
+
+      ($(this).find($('#new_timesheet label'))).each(function(){
+        var thisRow = $(this).attr('class');
+        $(thisPartialDivClass).find($('span[role=' + thisRow + ']')).text($(this).text());
+      });
+    });
 
 
     timesheet.slideUp();
     emailPreview.slideDown();  
   });
 
-// edit.click(function(event){
-//   event.preventDefault();
-//   timesheet.slideDown();
-//   emailPreview.slideUp();
-// });
+  edit.click(function(event){
+    event.preventDefault();
+    timesheet.slideDown();
+    emailPreview.slideUp();
+  });
 });
