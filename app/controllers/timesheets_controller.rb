@@ -4,7 +4,11 @@ class TimesheetsController < ApplicationController
   end
 
   def create
+    
+
     @timesheet = Timesheet.new(params[:timesheet])
+
+
       if @timesheet.valid?
         @name = "#{@timesheet.firstname}, #{@timesheet.lastname}"
         @message = @timesheet

@@ -11,7 +11,7 @@ $(document).on('page:change', function(){
   'Position: <input type="text" class="position" name="timesheet[shifts][][position]"><br>', //needs a name or an id? name...
   'Rate per hour: <input type="text" class="rate" name="timesheet[shifts][][pay_rate]"></br>',
   'Hours this shift: <input type="text" class="hours" name="timesheet[shifts][][hours_worked]"></br>',
-  'Subtotal: <label class="subtotal" class="subtotal" name="timesheet[shifts][][subtotal]"></div>',
+  'Subtotal: <label class="subtotal" name="timesheet[shifts][][subtotal]"></div>',
   ];
 
   function appendForm() {
@@ -24,7 +24,9 @@ $(document).on('page:change', function(){
     appendForm();
   });
   
-
+  $('#remove_form_button').click(function(){
+    $('div[class=shift]:last').remove();
+  });
 
   $('.container').on('keyup', '.rate', function(){    
     var subtotalElement = $(this).closest('.shift').children('.subtotal');    
