@@ -80,7 +80,7 @@
     <!-- pay position and rate -->
     <div class="row">
       <div class="large-6 medium-6 columns">
-        <%= f.collection_select :position, Timesheet::ROLES, :to_s, :to_s %>
+        <%= f.text_field :position, placeholder: "Position" %>
       </div>
       <div class="large-6 medium-6 columns">
           <%= f.text_field :pay_rate, placeholder: "Pay Rate" %>
@@ -100,20 +100,23 @@
 
     <!-- end hours worked and subtotal -->
 
+    <!-- additional shifts -->
+    <div id="shifts-wrapper"></div>
+    <!-- end additional shifts -->
 
-    <!-- add shift button -->
+    <!-- add/delete shift button -->
     <div class="row">
-      <div class="large-6 large-centered columns">
-        <div class="large-6 medium-4 small-6 columns">
-          <a href="#"><%= render 'add_shift' %></a>
+      <div class="large-6 large-centered medium-8 medium-centered small-9 small-centered columns">
+        <div class="large-6 medium-6 small-6 columns">
+          <a href="#" id="add-shift"><%= render 'add_shift' %></a>
         </div>
-        <div class="large-6 medium-4 small-6 columns">
-          <a href="#"><%= render 'remove_shift'%></a>
+        <div class="large-6 medium-6 small-6 columns">
+          <a href="#" id="remove-shift"><%= render 'remove_shift'%></a>
         </div>
       </div>
     </div>
     <br>
-    <!-- end add shift button -->
+    <!-- end add/delete shift button -->
 
 
     <div class="row">
