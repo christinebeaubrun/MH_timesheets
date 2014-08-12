@@ -4,12 +4,13 @@ class TimesheetsController < ApplicationController
   end
 
   def create
+    binding.pry
     @timesheet = Timesheet.new(params[:timesheet])
       if @timesheet.valid?
         @name = "#{@timesheet.firstname}, #{@timesheet.lastname}"
         @message = @timesheet
         @email = @timesheet.email
-
+        binding.pry 
         payroll = "mhmailr@gmail.com"
         recipients = [payroll, @email]
 
