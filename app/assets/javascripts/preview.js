@@ -8,6 +8,19 @@ $(document).on('page:change', function(){
 
   review.on('click', function(event){
     event.preventDefault();
+
+    var nameAndEmailPartial = [
+    "<br />First name: <span role='firstname'>" + $('.firstname').val() + "</span>",
+    "<br />Last name: <span role='lastname'>" + $('.lastname').val() + "</span>",
+    "<br />Email: <span role='email'>" + $('.email').val() + '</span><br />'
+    ];
+    var grandTotalAndHoursPartial = [
+    "<br />Total hours: <span role='total_hours'>" + $('.total_hours').text() + "</span>",
+    "<br />Grand total: <span role='grand_total'>" + $('.grand_total').text() + "</span>"
+    ];
+
+    $('.append_shift').append(nameAndEmailPartial.join("\n"));
+
     var shiftPartial = [
     '<br />Date:  <span role="date"></span><br />',
     'Start time:  <span role="start_time"></span><br />', 
@@ -16,7 +29,6 @@ $(document).on('page:change', function(){
     'Pay rate:  <span role="rate"></span><br />',
     'Subtotal pay:  <span role="subtotal"></span><br /><br /></div>'
     ]; 
-
 
     $.each($('.shift'), function(index, shift){
       var thisPartialDiv = "<div class='partial" + index + "'>";
@@ -35,6 +47,7 @@ $(document).on('page:change', function(){
       });
     });
 
+    $('.append_shift').append(grandTotalAndHoursPartial.join("\n"));
 
     timesheet.slideUp();
     emailPreview.slideDown();  
