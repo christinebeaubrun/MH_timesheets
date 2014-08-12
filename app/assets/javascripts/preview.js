@@ -1,4 +1,4 @@
-$(document).on('page:load', function(){
+$(document).on('page:change', function(){
   var review = $('#review'),
   edit = $('#edit'),
   timesheet = $('#new_timesheet'),
