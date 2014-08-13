@@ -2,13 +2,15 @@
   <p>First name: <%= @message.firstname%><br /></p>
   <p>Last name:  <%= @message.lastname%><br /></p>
   <p>Email:  <%= @message.email%><br /></p>
+  <br>
   <% @message.shifts.each do |shift| %>
-      <p>Date:  <%= shift["date"] %><br /></p>
+      <h2><p>Date:  <%= shift["date"] %><br /></p></h2>
       <p>Start time:  <%= shift["start_time"] %><br /></p>
       <p>Position:  <%= shift["position"] %><br /></p>
-      <p>Hours worked:  <%= shift["pay_rate"] %><br /></p></p>
-      <p>Subtotal pay:  <%= shift["hours_worked"] %><br /></p>
-      <p>Position:  <%= shift["subtotal"] %><br /></p>
+      <p>Pay Rate:  <%= shift["pay_rate"] %><br /></p></p>
+      <p>Hours worked:  <%= shift["hours_worked"] %><br /></p>
+      <p>Subtotal:  <%= shift["subtotal"] %><br /></p>
+      <br>
   <% end %>
   <p>Total hours:  <%= @message.total_hours%><br /></p>
   <p>Grand total: <%= @message.grand_total%></p>

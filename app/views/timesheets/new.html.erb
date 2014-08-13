@@ -1,7 +1,7 @@
 <!-- MUSEUM HACK logo -->
 <div class="large-12 large-centered medium-12 medium-centered small-12 small-centered columns" id="mhlogo">
   <br>
-  <%= render 'mhlogo' %>
+  <%= render 'logos/mhlogo' %>
   <br>
   <br>
 </div>
@@ -31,7 +31,7 @@
     <!-- Employee info -->
     <div class="row">
       <div class="large-6 large-centered medium-6 medium-centered small-7 small-centered columns">
-        <%= render 'employee_info' %>
+        <%= render 'logos/employee_info' %>
       </div>
     </div>
     <br>
@@ -67,7 +67,7 @@
 
     <div class="row">
       <div class="large-6 large-centered medium-6 medium-centered small-7 small-centered columns">
-        <%= render 'shiftinfo' %>
+        <%= render 'logos/shiftinfo' %>
       </div>
     </div>
     <br>
@@ -80,10 +80,10 @@
     <div class="row">
       <div class="large-6 large-centered medium-7 medium-centered small-9 small-centered columns">
         <div class="large-6 medium-6 small-6 columns">
-          <a href="#" id="add-shift"><%= render 'add_shift' %></a>
+          <a href="#" id="add-shift"><%= render 'logos/add_shift' %></a>
         </div>
         <div class="large-6 medium-6 small-6 columns">
-          <a href="#" id="remove-shift"><%= render 'remove_shift'%></a>
+          <a href="#" id="remove-shift"><%= render 'logos/remove_shift'%></a>
         </div>
       </div>
     </div>
@@ -100,7 +100,7 @@
 
    <div class="row">
      <div class="large-6 large-centered medium-6 medium-centered small-7 small-centered columns">
-       <%= render 'grand_total' %>
+       <%= render 'logos/grand_total' %>
      </div>
    </div>
    <br>
@@ -132,19 +132,23 @@
     </div>
     <!-- end verification section -->
   </div>
-  <br>
   <!-- review form -->
 
   <!-- div id="email-preview">
     <%#= render 'preview'%>
   </div> -->
-
   <div class="row">
+    <div class="large-12 medium-12 small-12 columns">
+      <%= render 'logos/submit_ribbon' %>
+    </div>
+  </div>
+  <br>
+  <div class="row collapse">
     <div class="large-5 large-centered medium-5 medium-centered small-8 small-centered columns">
       <!-- <div class="large-6 columns" id="hide-review">
         <button name="review" class="button expand" id="review">Review</button>
       </div> -->
-      <%= f.submit "Submit", class: "button expand" %>
+      <%= f.submit "SUBMIT", class: "button expand" %>
     </div>
   </div>
 

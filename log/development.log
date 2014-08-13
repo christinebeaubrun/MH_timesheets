@@ -58682,3 +58682,2510 @@ Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 01:53:23 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 01:53:23 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 08:11:27 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.5ms)
+  Rendered timesheets/_employee_info.html.erb (0.4ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.4ms)
+  Rendered timesheets/_add_shift.html.erb (0.4ms)
+  Rendered timesheets/_remove_shift.html.erb (0.3ms)
+  Rendered timesheets/_grand_total.html.erb (0.4ms)
+  Rendered timesheets/new.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 236ms (Views: 221.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2014-08-13 08:11:28 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Chris/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Chris/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Chris/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Chris/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/Chris/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/Chris/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /Users/Chris/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 08:16:58 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.1ms)
+  Rendered timesheets/_employee_info.html.erb (0.0ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.0ms)
+  Rendered timesheets/_add_shift.html.erb (0.1ms)
+  Rendered timesheets/_remove_shift.html.erb (0.1ms)
+  Rendered timesheets/_grand_total.html.erb (0.0ms)
+  Rendered timesheets/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 89ms (Views: 88.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 08:16:59 -0400
+
+
+Started POST "/timesheets" for 127.0.0.1 at 2014-08-13 08:20:21 -0400
+Processing by TimesheetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X/NqBcZQzwQtIBDfwC882ihtNTHHoXO1RNHc2fgiu44=", "timesheet"=>{"firstname"=>"Chris", "lastname"=>"Lehneis", "email"=>"cdlehneis@gmail.com", "shifts"=>[{"date"=>"2014-08-21", "start_time"=>"12:32", "position"=>"Admin", "pay_rate"=>"12", "hours_worked"=>"8", "subtotal"=>"96"}, {"date"=>"2014-08-22", "start_time"=>"03:12", "position"=>"Tour Guide", "pay_rate"=>"25", "hours_worked"=>"8", "subtotal"=>"200"}], "total_hours"=>"12123", "grand_total"=>"12312"}, "commit"=>"Submit"}
+  Rendered confirmation_mailer/confirmation_email.html.erb (1.5ms)
+
+ConfirmationMailer#confirmation_email: processed outbound mail in 20.5ms
+
+Sent mail to mhmailr@gmail.com (4451.1ms)
+Date: Wed, 13 Aug 2014 08:20:21 -0400
+From: mhailr@gmail.com
+To: mhmailr@gmail.com
+Message-ID: <53eb5805be5ad_25082f0811084588@Christophers-MacBook-Pro.local.mail>
+Subject: Sent from MuseumHack Timesheet app!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Timesheet for: Chris, Lehneis</h1>
+  <p>First name: Chris<br /></p>
+  <p>Last name:  Lehneis<br /></p>
+  <p>Email:  cdlehneis@gmail.com<br /></p>
+      <p>Date:  2014-08-21<br /></p>
+      <p>Start time:  12:32<br /></p>
+      <p>Position:  Admin<br /></p>
+      <p>Hours worked:  12<br /></p></p>
+      <p>Subtotal pay:  8<br /></p>
+      <p>Position:  96<br /></p>
+      <p>Date:  2014-08-22<br /></p>
+      <p>Start time:  03:12<br /></p>
+      <p>Position:  Tour Guide<br /></p>
+      <p>Hours worked:  25<br /></p></p>
+      <p>Subtotal pay:  8<br /></p>
+      <p>Position:  200<br /></p>
+  <p>Total hours:  12123<br /></p>
+  <p>Grand total: 12312</p>
+
+  Rendered confirmation_mailer/confirmation_email.html.erb (0.1ms)
+
+ConfirmationMailer#confirmation_email: processed outbound mail in 10.4ms
+
+Sent mail to cdlehneis@gmail.com (3416.2ms)
+Date: Wed, 13 Aug 2014 08:20:26 -0400
+From: mhailr@gmail.com
+To: cdlehneis@gmail.com
+Message-ID: <53eb580a3a474_25082f081108467f@Christophers-MacBook-Pro.local.mail>
+Subject: Sent from MuseumHack Timesheet app!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Timesheet for: Chris, Lehneis</h1>
+  <p>First name: Chris<br /></p>
+  <p>Last name:  Lehneis<br /></p>
+  <p>Email:  cdlehneis@gmail.com<br /></p>
+      <p>Date:  2014-08-21<br /></p>
+      <p>Start time:  12:32<br /></p>
+      <p>Position:  Admin<br /></p>
+      <p>Hours worked:  12<br /></p></p>
+      <p>Subtotal pay:  8<br /></p>
+      <p>Position:  96<br /></p>
+      <p>Date:  2014-08-22<br /></p>
+      <p>Start time:  03:12<br /></p>
+      <p>Position:  Tour Guide<br /></p>
+      <p>Hours worked:  25<br /></p></p>
+      <p>Subtotal pay:  8<br /></p>
+      <p>Position:  200<br /></p>
+  <p>Total hours:  12123<br /></p>
+  <p>Grand total: 12312</p>
+
+  Rendered confirmation_mailer/_email_logo.html.erb (0.6ms)
+  Rendered timesheets/send_email.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 7931ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 08:20:29 -0400
+
+
+Started POST "/timesheets" for 127.0.0.1 at 2014-08-13 08:24:25 -0400
+Processing by TimesheetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X/NqBcZQzwQtIBDfwC882ihtNTHHoXO1RNHc2fgiu44=", "timesheet"=>{"firstname"=>"Chris", "lastname"=>"Lehneis", "email"=>"cdlehneis@gmail.com", "shifts"=>[{"date"=>"2014-08-07", "start_time"=>"03:45", "position"=>"Admin", "pay_rate"=>"21", "hours_worked"=>"6", "subtotal"=>"126"}], "total_hours"=>"6", "grand_total"=>"126"}, "commit"=>"Submit"}
+  Rendered confirmation_mailer/confirmation_email.html.erb (0.9ms)
+
+ConfirmationMailer#confirmation_email: processed outbound mail in 10.4ms
+
+Sent mail to mhmailr@gmail.com (3515.1ms)
+Date: Wed, 13 Aug 2014 08:24:26 -0400
+From: mhailr@gmail.com
+To: mhmailr@gmail.com
+Message-ID: <53eb58fae10_25082fcd910847c9@Christophers-MacBook-Pro.local.mail>
+Subject: Sent from MuseumHack Timesheet app!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Timesheet for: Chris, Lehneis</h1>
+  <p>First name: Chris<br /></p>
+  <p>Last name:  Lehneis<br /></p>
+  <p>Email:  cdlehneis@gmail.com<br /></p>
+  <br>
+      <p>Date:  2014-08-07<br /></p>
+      <br>
+      <p>Start time:  03:45<br /></p>
+      <p>Position:  Admin<br /></p>
+      <p>Pay Rate:  21<br /></p></p>
+      <p>Hours worked:  6<br /></p>
+      <p>Subtotal:  126<br /></p>
+      <br>
+  <p>Total hours:  6<br /></p>
+  <p>Grand total: 126</p>
+
+  Rendered confirmation_mailer/confirmation_email.html.erb (0.1ms)
+
+ConfirmationMailer#confirmation_email: processed outbound mail in 8.9ms
+
+Sent mail to cdlehneis@gmail.com (3395.3ms)
+Date: Wed, 13 Aug 2014 08:24:29 -0400
+From: mhailr@gmail.com
+To: cdlehneis@gmail.com
+Message-ID: <53eb58fd80ee2_25082fcd910848d8@Christophers-MacBook-Pro.local.mail>
+Subject: Sent from MuseumHack Timesheet app!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Timesheet for: Chris, Lehneis</h1>
+  <p>First name: Chris<br /></p>
+  <p>Last name:  Lehneis<br /></p>
+  <p>Email:  cdlehneis@gmail.com<br /></p>
+  <br>
+      <p>Date:  2014-08-07<br /></p>
+      <br>
+      <p>Start time:  03:45<br /></p>
+      <p>Position:  Admin<br /></p>
+      <p>Pay Rate:  21<br /></p></p>
+      <p>Hours worked:  6<br /></p>
+      <p>Subtotal:  126<br /></p>
+      <br>
+  <p>Total hours:  6<br /></p>
+  <p>Grand total: 126</p>
+
+  Rendered confirmation_mailer/_email_logo.html.erb (0.0ms)
+  Rendered timesheets/send_email.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6949ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 08:24:33 -0400
+
+
+Started POST "/timesheets" for 127.0.0.1 at 2014-08-13 08:28:06 -0400
+Processing by TimesheetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X/NqBcZQzwQtIBDfwC882ihtNTHHoXO1RNHc2fgiu44=", "timesheet"=>{"firstname"=>"Chris", "lastname"=>"Lehneis", "email"=>"cdlehneis@gmail.com", "shifts"=>[{"date"=>"2014-08-14", "start_time"=>"12:34", "position"=>"Tour Guide", "pay_rate"=>"23", "hours_worked"=>"10", "subtotal"=>"230"}, {"date"=>"2014-08-21", "start_time"=>"09:21", "position"=>"Admin", "pay_rate"=>"12", "hours_worked"=>"10", "subtotal"=>"120"}], "total_hours"=>"20", "grand_total"=>"350"}, "commit"=>"Submit"}
+  Rendered confirmation_mailer/confirmation_email.html.erb (1.9ms)
+
+ConfirmationMailer#confirmation_email: processed outbound mail in 12.2ms
+
+Sent mail to mhmailr@gmail.com (9499.0ms)
+Date: Wed, 13 Aug 2014 08:28:06 -0400
+From: mhailr@gmail.com
+To: mhmailr@gmail.com
+Message-ID: <53eb59d632335_25080a4cf7484974@Christophers-MacBook-Pro.local.mail>
+Subject: Sent from MuseumHack Timesheet app!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Timesheet for: Chris, Lehneis</h1>
+  <p>First name: Chris<br /></p>
+  <p>Last name:  Lehneis<br /></p>
+  <p>Email:  cdlehneis@gmail.com<br /></p>
+  <br>
+      <h2><p>Date:  2014-08-14<br /></p></h2>
+      <p>Start time:  12:34<br /></p>
+      <p>Position:  Tour Guide<br /></p>
+      <p>Pay Rate:  23<br /></p></p>
+      <p>Hours worked:  10<br /></p>
+      <p>Subtotal:  230<br /></p>
+      <br>
+      <h2><p>Date:  2014-08-21<br /></p></h2>
+      <p>Start time:  09:21<br /></p>
+      <p>Position:  Admin<br /></p>
+      <p>Pay Rate:  12<br /></p></p>
+      <p>Hours worked:  10<br /></p>
+      <p>Subtotal:  120<br /></p>
+      <br>
+  <p>Total hours:  20<br /></p>
+  <p>Grand total: 350</p>
+
+  Rendered confirmation_mailer/confirmation_email.html.erb (0.1ms)
+
+ConfirmationMailer#confirmation_email: processed outbound mail in 10.2ms
+
+Sent mail to cdlehneis@gmail.com (3025.2ms)
+Date: Wed, 13 Aug 2014 08:28:15 -0400
+From: mhailr@gmail.com
+To: cdlehneis@gmail.com
+Message-ID: <53eb59dfae60a_25080a4cf74850bf@Christophers-MacBook-Pro.local.mail>
+Subject: Sent from MuseumHack Timesheet app!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Timesheet for: Chris, Lehneis</h1>
+  <p>First name: Chris<br /></p>
+  <p>Last name:  Lehneis<br /></p>
+  <p>Email:  cdlehneis@gmail.com<br /></p>
+  <br>
+      <h2><p>Date:  2014-08-14<br /></p></h2>
+      <p>Start time:  12:34<br /></p>
+      <p>Position:  Tour Guide<br /></p>
+      <p>Pay Rate:  23<br /></p></p>
+      <p>Hours worked:  10<br /></p>
+      <p>Subtotal:  230<br /></p>
+      <br>
+      <h2><p>Date:  2014-08-21<br /></p></h2>
+      <p>Start time:  09:21<br /></p>
+      <p>Position:  Admin<br /></p>
+      <p>Pay Rate:  12<br /></p></p>
+      <p>Hours worked:  10<br /></p>
+      <p>Subtotal:  120<br /></p>
+      <br>
+  <p>Total hours:  20<br /></p>
+  <p>Grand total: 350</p>
+
+  Rendered confirmation_mailer/_email_logo.html.erb (0.0ms)
+  Rendered timesheets/send_email.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 12566ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 08:28:18 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.1ms)
+  Rendered timesheets/_employee_info.html.erb (0.0ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.0ms)
+  Rendered timesheets/_add_shift.html.erb (0.0ms)
+  Rendered timesheets/_remove_shift.html.erb (0.0ms)
+  Rendered timesheets/_grand_total.html.erb (0.0ms)
+  Rendered timesheets/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:43 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.0ms)
+  Rendered timesheets/_employee_info.html.erb (0.0ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.0ms)
+  Rendered timesheets/_add_shift.html.erb (0.0ms)
+  Rendered timesheets/_remove_shift.html.erb (0.0ms)
+  Rendered timesheets/_grand_total.html.erb (0.0ms)
+  Rendered timesheets/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 08:30:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.0ms)
+  Rendered timesheets/_employee_info.html.erb (0.0ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.0ms)
+  Rendered timesheets/_add_shift.html.erb (0.0ms)
+  Rendered timesheets/_remove_shift.html.erb (0.0ms)
+  Rendered timesheets/_grand_total.html.erb (0.0ms)
+  Rendered timesheets/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 08:31:08 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.1ms)
+  Rendered timesheets/_employee_info.html.erb (0.1ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.0ms)
+  Rendered timesheets/_add_shift.html.erb (0.1ms)
+  Rendered timesheets/_remove_shift.html.erb (0.1ms)
+  Rendered timesheets/_grand_total.html.erb (0.1ms)
+  Rendered timesheets/_submit_ribbon.html.erb (0.5ms)
+  Rendered timesheets/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:21 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.0ms)
+  Rendered timesheets/_employee_info.html.erb (0.1ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.1ms)
+  Rendered timesheets/_add_shift.html.erb (0.0ms)
+  Rendered timesheets/_remove_shift.html.erb (0.0ms)
+  Rendered timesheets/_grand_total.html.erb (0.0ms)
+  Rendered timesheets/_submit_ribbon.html.erb (0.3ms)
+  Rendered timesheets/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 08:55:45 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.0ms)
+  Rendered timesheets/_employee_info.html.erb (0.0ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.0ms)
+  Rendered timesheets/_add_shift.html.erb (0.0ms)
+  Rendered timesheets/_remove_shift.html.erb (0.0ms)
+  Rendered timesheets/_grand_total.html.erb (0.1ms)
+  Rendered timesheets/_submit_ribbon.html.erb (0.3ms)
+  Rendered timesheets/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:02 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.0ms)
+  Rendered timesheets/_employee_info.html.erb (0.0ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.0ms)
+  Rendered timesheets/_add_shift.html.erb (0.0ms)
+  Rendered timesheets/_remove_shift.html.erb (0.0ms)
+  Rendered timesheets/_grand_total.html.erb (0.0ms)
+  Rendered timesheets/_submit_ribbon.html.erb (0.4ms)
+  Rendered timesheets/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:40 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:41 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 08:56:41 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.1ms)
+  Rendered timesheets/_employee_info.html.erb (0.0ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.0ms)
+  Rendered timesheets/_add_shift.html.erb (0.0ms)
+  Rendered timesheets/_remove_shift.html.erb (0.0ms)
+  Rendered timesheets/_grand_total.html.erb (0.1ms)
+  Rendered timesheets/_submit_ribbon.html.erb (0.4ms)
+  Rendered timesheets/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 08:57:03 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.0ms)
+  Rendered timesheets/_employee_info.html.erb (0.1ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.0ms)
+  Rendered timesheets/_add_shift.html.erb (0.0ms)
+  Rendered timesheets/_remove_shift.html.erb (0.0ms)
+  Rendered timesheets/_grand_total.html.erb (0.0ms)
+  Rendered timesheets/_submit_ribbon.html.erb (0.3ms)
+  Rendered timesheets/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 08:59:13 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.0ms)
+  Rendered timesheets/_employee_info.html.erb (0.0ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.0ms)
+  Rendered timesheets/_add_shift.html.erb (0.0ms)
+  Rendered timesheets/_remove_shift.html.erb (0.0ms)
+  Rendered timesheets/_grand_total.html.erb (0.0ms)
+  Rendered timesheets/_submit_ribbon.html.erb (0.3ms)
+  Rendered timesheets/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:43 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.0ms)
+  Rendered timesheets/_employee_info.html.erb (0.0ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.0ms)
+  Rendered timesheets/_add_shift.html.erb (0.0ms)
+  Rendered timesheets/_remove_shift.html.erb (0.0ms)
+  Rendered timesheets/_grand_total.html.erb (0.0ms)
+  Rendered timesheets/_submit_ribbon.html.erb (0.3ms)
+  Rendered timesheets/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 09:01:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.0ms)
+  Rendered timesheets/_employee_info.html.erb (0.0ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.0ms)
+  Rendered timesheets/_add_shift.html.erb (0.0ms)
+  Rendered timesheets/_remove_shift.html.erb (0.0ms)
+  Rendered timesheets/_grand_total.html.erb (0.0ms)
+  Rendered timesheets/_submit_ribbon.html.erb (0.0ms)
+  Rendered timesheets/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:29 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered timesheets/_mhlogo.html.erb (0.0ms)
+  Rendered timesheets/_employee_info.html.erb (0.0ms)
+  Rendered timesheets/_shiftinfo.html.erb (0.0ms)
+  Rendered timesheets/_add_shift.html.erb (0.0ms)
+  Rendered timesheets/_remove_shift.html.erb (0.0ms)
+  Rendered timesheets/_grand_total.html.erb (0.0ms)
+  Rendered timesheets/_submit_ribbon.html.erb (0.0ms)
+  Rendered timesheets/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 09:02:58 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered logos/_mhlogo.html.erb (0.3ms)
+  Rendered logos/_employee_info.html.erb (0.3ms)
+  Rendered logos/_shiftinfo.html.erb (0.3ms)
+  Rendered logos/_add_shift.html.erb (0.2ms)
+  Rendered logos/_remove_shift.html.erb (0.3ms)
+  Rendered logos/_grand_total.html.erb (0.2ms)
+  Rendered logos/_submit_ribbon.html.erb (3.7ms)
+  Rendered timesheets/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:03 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:03 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:03 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:03 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 09:11:03 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered logos/_mhlogo.html.erb (0.0ms)
+  Rendered logos/_employee_info.html.erb (0.0ms)
+  Rendered logos/_shiftinfo.html.erb (0.0ms)
+  Rendered logos/_add_shift.html.erb (0.0ms)
+  Rendered logos/_remove_shift.html.erb (0.0ms)
+  Rendered logos/_grand_total.html.erb (0.0ms)
+  Rendered logos/_submit_ribbon.html.erb (0.0ms)
+  Rendered timesheets/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 83ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 09:25:33 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+Processing by TimesheetsController#new as HTML
+  Rendered logos/_mhlogo.html.erb (0.0ms)
+  Rendered logos/_employee_info.html.erb (0.0ms)
+  Rendered logos/_shiftinfo.html.erb (0.1ms)
+  Rendered logos/_add_shift.html.erb (0.0ms)
+  Rendered logos/_remove_shift.html.erb (0.0ms)
+  Rendered logos/_grand_total.html.erb (0.0ms)
+  Rendered logos/_submit_ribbon.html.erb (0.0ms)
+  Rendered timesheets/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 71ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/timesheets.css?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/confirmation.css?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/calculations.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/confirmation.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/preview.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/shifts.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/timesheets.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 09:28:51 -0400
