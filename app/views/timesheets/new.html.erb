@@ -28,6 +28,7 @@
     <br>
   <%= form_for @timesheet do |f| %>
 
+<<<<<<< HEAD
     <!-- Employee info -->
     <div class="row">
       <div class="large-6 large-centered medium-6 medium-centered small-7 small-centered columns">
@@ -58,6 +59,30 @@
       </div>
     </div>
     <!-- end employee info -->
+=======
+<div id="timesheet">
+  <h1>Timesheets#new</h1>
+  <h1>Let's Get You Paid</h1>
+    <%= form_for @timesheet do |f| %>
+
+    First name: <%= f.text_field :firstname, :autocomplete=> :off, :required => true%><br />
+    Last name:  <%= f.text_field :lastname, :autocomplete=> :off, :required => true%><br />
+    Email:  <%= f.email_field :email, :autocomplete=> :off, :required => true%><br />
+    Date:  <%= f.date_field :date, :autocomplete=> :off, :required => true%><br />
+    Shift:  <%= f.text_field :day_worked, :autocomplete=> :off, :required => true%><br />
+    Start time:  <%= f.text_field :start_time, :autocomplete=> :off, :required => true%><br />
+    Hours worked:  <%= f.text_field :hours_worked, :autocomplete=> :off, :required => true%><br />
+    Total hours worked:  <%= f.text_field :total_hours_worked, :autocomplete=> :off, :required => true%><br />
+    Subtotal pay:  <%= f.text_field :subtotal_pay, :autocomplete=> :off, :required => true%><br />
+    Position:  <%= f.text_field :position, :autocomplete=> :off, :required => true%><br />
+    Work week:  <%= f.text_field :work_week, :autocomplete=> :off, :required => true%><br />
+    Shift pay:  <%= f.text_field :shift_pay, :autocomplete=> :off, :required => true%><br />
+    Pay rate:  <%= f.text_field :pay_rate, :autocomplete=> :off, :required => true%><br />
+    Grand total: <%= f.text_field :grand_total, :autocomplete=> :off, :required => true%><br />
+
+    <button name="review" id="review">Review</button>
+    <!-- <%#= link_to "review", '#', id: 'review'%> -->
+>>>>>>> master
 
     <div class="row">
       <div class="large-12 large-centered columns">
@@ -96,6 +121,7 @@
       </div>
     </div>
 
+<<<<<<< HEAD
     <!-- verification section -->
 
    <div class="row">
@@ -154,6 +180,17 @@
 
 
   <% end %>
+=======
+<div id="email-preview">
+  <%= render 'preview'%><br>
+<!-- <<<<<<< HEAD
+  <button name="edit" id="edit">Back</button>
+  <!-- <%#= link_to "edit", '#', id: 'edit' %> -->
+<!-- </div>
+    <%#= f.submit "Submit" %> -->
+  <button name="edit" id="edit">Edit</button>
+  <!-- <%= link_to "edit", '#', id: 'edit' %> -->
+>>>>>>> master
 
 </div>
 <!-- end TIMESHEET -->
