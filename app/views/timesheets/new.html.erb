@@ -151,5 +151,70 @@
   <% end %>
 </div>
 <!-- end TIMESHEET -->
-<br>
-<br>
+
+
+<div class="shift hidden" id="new-shift-row-">
+  <div class="row">
+    <div class="large-12 large-centered columns">
+      <hr>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="large-6 medium-6 small-12 columns">
+      <div class="row collapse">
+        <div class="large-3 medium-3 small-2 columns">
+          <span class="prefix">date</span>
+        </div>
+        <div class="large-9 medium-9 small-10 columns">
+          <input class="date" id="timesheet_date" name="timesheet[shifts][][date]" type="date" required>
+        </div>
+      </div>
+    </div>
+    <div class="large-6 medium-6 small-12 columns">
+      <div class="row collapse">
+        <div class="large-3 medium-3 small-2 columns">
+          <span class="prefix">time</span>
+        </div>
+        <div class="large-9 medium-9 small-10 columns">
+          <input class="start_time" id="timesheet_start_time" name="timesheet[shifts][][start_time]" placeholder="Start Time" type="time" required>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 medium-6 small-12 columns">
+      <input type="text" class="position" name="timesheet[shifts][][position]" placeholder="Position" type="text" required></div><div class="large-6 medium-6 small-12 columns">
+        <div class="row collapse">
+          <div class="large-2 medium-2 small-2 columns">
+            <span class="prefix">$</span>
+          </div>
+          <div class="large-10 medium-10 small-10 columns">
+            <input class="rate" id="timesheet_pay_rate" name="timesheet[shifts][][pay_rate]" placeholder="Pay Rate" type="text" required>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 medium-6 small-12 columns">
+        <div class="row collapse">
+          <div class="large-3 medium-3 small-2 columns">
+            <span class="prefix">hrs</span>
+          </div>
+          <div class="large-9 medium-9 small-10 columns">
+            <input class="hours" id="timesheet_hours_worked" name="timesheet[shifts][][hours_worked]" placeholder="Time On Shift" type="text" required>
+          </div>
+        </div>
+      </div>
+      <div class="large-6 medium-6 small-12 columns">
+        <div class="row collapse">
+          <div class="large-2 medium-2 small-2 columns">
+            <span class="prefix">$</span>
+          </div>
+          <div class="large-10 medium-10 small-10 columns">
+            <input class="subtotal" name="timesheet[shifts][][subtotal]" placeholder="Subtotal" type="text" required>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
