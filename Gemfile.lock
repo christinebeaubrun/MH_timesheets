@@ -44,11 +44,9 @@ GEM
     erubis (2.7.0)
     excon (0.33.0)
     execjs (2.2.1)
-<<<<<<< HEAD
     foundation-rails (5.3.0.1)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
-=======
     heroku (3.9.6)
       excon (= 0.33.0)
       heroku-api (= 0.3.18)
@@ -59,7 +57,6 @@ GEM
     heroku-api (0.3.18)
       excon (~> 0.27)
       multi_json (~> 1.8)
->>>>>>> master
     hike (1.2.3)
     i18n (0.6.11)
     jbuilder (2.1.3)
@@ -157,11 +154,8 @@ PLATFORMS
 DEPENDENCIES
   better_errors (~> 1.1.0)
   coffee-rails (~> 4.0.0)
-<<<<<<< HEAD
   foundation-rails
-=======
   heroku
->>>>>>> master
   jbuilder (~> 2.0)
   jquery-rails
   pg (~> 0.17.1)
