@@ -10,19 +10,19 @@ $(document).on('page:change', function(){
     event.preventDefault();
 
     var nameAndEmailPartial = [
-    "<br />First name: <span role='firstname'>" + $('.firstname').val() + "</span>",
+    "<div class='part1'><br />First name: <span role='firstname'>" + $('.firstname').val() + "</span>",
     "<br />Last name: <span role='lastname'>" + $('.lastname').val() + "</span>",
-    "<br />Email: <span role='email'>" + $('.email').val() + '</span><br />'
+    "<br />Email: <span role='email'>" + $('.email').val() + '</span><br /></div>'
     ];
     var grandTotalAndHoursPartial = [
-    "<br />Total hours: <span role='total_hours'>" + $('.total_hours').text() + "</span>",
-    "<br />Grand total: <span role='grand_total'>" + $('.grand_total').text() + "</span>"
+    "<div class='part3'><br />Total hours: <span role='total_hours'>" + $('.total_hours').text() + "</span>",
+    "<br />Grand total: <span role='grand_total'>" + $('.grand_total').text() + "</span></div>"
     ];
 
     $('.append_shift').append(nameAndEmailPartial.join("\n"));
 
     var shiftPartial = [
-    '<br />Date:  <span role="date"></span><br />',
+    '<div class="part2"><br />Date:  <span role="date"></span><br />',
     'Start time:  <span role="start_time"></span><br />', 
     'Hours worked:  <span role="hours"></span><br />',
     'Position:  <span role="position"></span><br />',
@@ -55,6 +55,11 @@ $(document).on('page:change', function(){
 
   edit.click(function(event){
     event.preventDefault();
+    //remove all the partial part1 and part3. 
+      $('div[class=part1]').remove();
+      $('div[class=part2]').remove();
+      $('div[class=part3]').remove();
+
     timesheet.slideDown();
     emailPreview.slideUp();
   });
