@@ -1,3 +1,13 @@
+<!-- MUSEUM HACK logo -->
+<div class="large-12 large-centered medium-12 medium-centered small-12 small-centered columns" id="mhlogo">
+  <br>
+  <%= render 'logos/mhlogo' %>
+  <br>
+  <br>
+</div>
+<!-- end MUSEUM HACK logo -->
+
+<!-- form validations -->
 <div id="validations">
    <% if @timesheet.errors.any? %>
      <div id="error-explanation">
@@ -10,42 +20,136 @@
      </div>
   <% end %>
 </div>
+<!-- end form validations -->
 
-<div id="timesheet">
-  <h1>Timesheets#new</h1>
-  <h1>Let's Get You Paid</h1>
-    <%= form_for @timesheet do |f| %>
+<!-- TIMESHEET -->
+<div class="large-6 large-centered medium-8 medium-centered small-11 small-centered columns" id="sheet">
+  <div id="timesheet">
+    <br>
+  <%= form_for @timesheet do |f| %>
+    <!-- Employee info -->
+    <div class="row">
+      <div class="large-6 large-centered medium-6 medium-centered small-7 small-centered columns">
+        <%= render 'logos/employee_info' %>
+      </div>
+    </div>
+    <br>
 
-    First name: <%= f.text_field :firstname, :autocomplete=> :off, :required => true%><br />
-    Last name:  <%= f.text_field :lastname, :autocomplete=> :off, :required => true%><br />
-    Email:  <%= f.email_field :email, :autocomplete=> :off, :required => true%><br />
-    Date:  <%= f.date_field :date, :autocomplete=> :off, :required => true%><br />
-    Shift:  <%= f.text_field :day_worked, :autocomplete=> :off, :required => true%><br />
-    Start time:  <%= f.text_field :start_time, :autocomplete=> :off, :required => true%><br />
-    Hours worked:  <%= f.text_field :hours_worked, :autocomplete=> :off, :required => true%><br />
-    Total hours worked:  <%= f.text_field :total_hours_worked, :autocomplete=> :off, :required => true%><br />
-    Subtotal pay:  <%= f.text_field :subtotal_pay, :autocomplete=> :off, :required => true%><br />
-    Position:  <%= f.text_field :position, :autocomplete=> :off, :required => true%><br />
-    Work week:  <%= f.text_field :work_week, :autocomplete=> :off, :required => true%><br />
-    Shift pay:  <%= f.text_field :shift_pay, :autocomplete=> :off, :required => true%><br />
-    Pay rate:  <%= f.text_field :pay_rate, :autocomplete=> :off, :required => true%><br />
-    Grand total: <%= f.text_field :grand_total, :autocomplete=> :off, :required => true%><br />
+    <div class="row">
+      <div class="large-6 medium-6 columns">
+        <%= f.text_field :firstname, placeholder: "First Name", :required=>true %>
+      </div>
+      <div class="large-6 medium-6 columns">
+        <%= f.text_field :lastname, placeholder: "Last Name", :required=>true %>
+      </div>
+    </div>
 
-    <button name="review" id="review">Review</button>
-    <!-- <%#= link_to "review", '#', id: 'review'%> -->
+    <div class="row">
+      <div class="large-12 small-12 columns">
+        <div class="row collapse">
+          <div class="large-2 small-2 columns">
+            <span class="prefix">e-mail</span>
+          </div>
+          <div class="large-10 small-10 columns">
+            <%= f.email_field :email, :required=>true %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end employee info -->
+    <div class="row">
+      <div class="large-12 large-centered columns">
+        <hr>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="large-6 large-centered medium-6 medium-centered small-7 small-centered columns">
+        <%= render 'logos/shiftinfo' %>
+      </div>
+    </div>
+    <br>
+
+    <!-- shifts -->
+    <div id="shifts-wrapper"></div>
+    <!-- end shifts -->
+
+    <!-- add/delete shift button -->
+    <div class="row">
+      <div class="large-6 large-centered medium-7 medium-centered small-9 small-centered columns">
+        <div class="large-6 medium-6 small-6 columns">
+          <a href="#" id="add-shift"><%= render 'logos/add_shift' %></a>
+        </div>
+        <div class="large-6 medium-6 small-6 columns">
+          <a href="#" id="remove-shift"><%= render 'logos/remove_shift'%></a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- end add/delete shift button -->
+
+    <div class="row">
+      <div class="large-12 columns">
+        <hr>
+      </div>
+    </div>
+
+    <!-- verification section -->
+   <div class="row">
+     <div class="large-6 large-centered medium-6 medium-centered small-7 small-centered columns">
+       <%= render 'logos/grand_total' %>
+     </div>
+   </div>
+   <br>
+
+    <div class="row">
+      <div class="large-5 large-centered medium-5 medium-centered small-8 small-centered columns">
+        <div class="row collapse">
+          <div class="large-3 medium-3 small-3 columns">
+            <span class="prefix">hrs</span>
+          </div>
+          <div class="large-9 medium-9 small-9 columns">
+            <%= f.text_field :total_hours, :required=>true%>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-5 large-centered medium-5 medium-centered small-8 small-centered columns">
+        <div class="row collapse">
+          <div class="large-3 medium-3 small-3 columns">
+            <span class="prefix">$</span>
+          </div>
+          <div class="large-9 medium-9 small-9 columns">
+            <%= f.text_field :grand_total, :required=>true %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end verification section -->
+  </div>
+  <!-- review form -->
+
+  <!-- div id="email-preview">
+    <%#= render 'preview'%>
+  </div> -->
+  <div class="row">
+    <div class="large-12 medium-12 small-12 columns">
+      <%= render 'logos/submit_ribbon' %>
+    </div>
+  </div>
+  <br>
+  <div class="row collapse">
+    <div class="large-5 large-centered medium-5 medium-centered small-8 small-centered columns">
+      <!-- <div class="large-6 columns" id="hide-review">
+        <button name="review" class="button expand" id="review">Review</button>
+      </div> -->
+      <%= f.submit "SUBMIT", class: "button expand" %>
+    </div>
+  </div>
+  <% end %>
 </div>
-
-<div id="email-preview">
-  <%= render 'preview'%><br>
-<!-- <<<<<<< HEAD
-  <button name="edit" id="edit">Back</button>
-  <!-- <%#= link_to "edit", '#', id: 'edit' %> -->
-<!-- </div>
-    <%#= f.submit "Submit" %> -->
-  <button name="edit" id="edit">Edit</button>
-  <!-- <%= link_to "edit", '#', id: 'edit' %> -->
-
-</div>
-  <%= f.submit "Submit" %>
-<% end %>
+<!-- end TIMESHEET -->
+<br>
+<br>

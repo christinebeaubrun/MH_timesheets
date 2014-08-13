@@ -9,7 +9,6 @@ class TimesheetsController < ApplicationController
         @name = "#{@timesheet.firstname}, #{@timesheet.lastname}"
         @message = @timesheet
         @email = @timesheet.email
-
         payroll = "mhmailr@gmail.com"
         recipients = [payroll, @email]
 
@@ -18,6 +17,7 @@ class TimesheetsController < ApplicationController
         # end
 
         render :action => 'send_email'
+        
       else
         render :new
       end
