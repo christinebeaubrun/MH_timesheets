@@ -16,9 +16,9 @@
       <h3><u>Date:  <%= shift["date"] %></u></h3><br />
       <p>Start time:  <%= shift["start_time"] %><br /></p>
       <p>Position:  <%= shift["position"] %><br /></p>
-      <p>Hours worked:  <%= shift["pay_rate"] %><br /></p></p>
-      <p>Subtotal pay:  <%= shift["hours_worked"] %><br /></p>
-      <p>Position:  <%= shift["subtotal"] %><br /></p>
+      <p>Pay Rate:  <%= shift["pay_rate"] %><br /></p></p>
+      <p>Hours worked:  <%= shift["hours_worked"] %><br /></p>
+      <p>Subtotal:  <%= shift["subtotal"] %><br /></p>
   <% end %>
   <p>Total hours:  <%= @message.total_hours%><br /></p>
   <p>Grand total: <%= @message.grand_total%></p>
