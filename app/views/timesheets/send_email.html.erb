@@ -1,1 +1,26 @@
-<h1>Email Sent</h1>
+<div class="large-12 large-centered medium-12 medium-centered small-12 small-centered columns" id="mhlogo">
+  <br>
+  <%= render 'confirmation_mailer/email_logo'%>
+  <br>
+  <br>
+</div>
+
+<div class="large-6 large-centered medium-8 medium-centered small-11 small-centered columns" id="sheet">
+  <br>
+  <h1>Hi, <%= @name %></h1>
+  <h3>Here is your timesheet below</h3>
+  <p>First name: <%= @message.firstname%><br /></p>
+  <p>Last name:  <%= @message.lastname%><br /></p>
+  <p>Email:  <%= @message.email%><br /></p>
+  <% @message.shifts.each do |shift| %>
+      <h3><u>Date:  <%= shift["date"] %></u></h3><br />
+      <p>Start time:  <%= shift["start_time"] %><br /></p>
+      <p>Position:  <%= shift["position"] %><br /></p>
+      <p>Hours worked:  <%= shift["pay_rate"] %><br /></p></p>
+      <p>Subtotal pay:  <%= shift["hours_worked"] %><br /></p>
+      <p>Position:  <%= shift["subtotal"] %><br /></p>
+  <% end %>
+  <p>Total hours:  <%= @message.total_hours%><br /></p>
+  <p>Grand total: <%= @message.grand_total%></p>
+  <br>
+</div>

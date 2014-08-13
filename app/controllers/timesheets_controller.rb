@@ -4,7 +4,6 @@ class TimesheetsController < ApplicationController
   end
 
   def create
-    binding.pry 
     @timesheet = Timesheet.new(params[:timesheet])
       if @timesheet.valid?
         @name = "#{@timesheet.firstname}, #{@timesheet.lastname}"
@@ -18,6 +17,7 @@ class TimesheetsController < ApplicationController
         end
 
         render :action => 'send_email'
+        
       else
         render :new
       end

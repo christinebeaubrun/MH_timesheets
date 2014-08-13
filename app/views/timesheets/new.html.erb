@@ -1,9 +1,13 @@
+<!-- MUSEUM HACK logo -->
 <div class="large-12 large-centered medium-12 medium-centered small-12 small-centered columns" id="mhlogo">
   <br>
   <%= render 'mhlogo' %>
   <br>
   <br>
 </div>
+<!-- end MUSEUM HACK logo -->
+
+<!-- form validations -->
 <div id="validations">
    <% if @timesheet.errors.any? %>
      <div id="error-explanation">
@@ -16,11 +20,14 @@
      </div>
   <% end %>
 </div>
+<!-- end form validations -->
 
+<!-- TIMESHEET -->
 <div class="large-6 large-centered medium-8 medium-centered small-11 small-centered columns" id="sheet">
   <div id="timesheet">
     <br>
   <%= form_for @timesheet do |f| %>
+
     <!-- Employee info -->
     <div class="row">
       <div class="large-6 large-centered medium-6 medium-centered small-7 small-centered columns">
@@ -65,53 +72,13 @@
     </div>
     <br>
 
-    <!-- Date/StartTime -->
-    <!-- <div class="row">
-      <div class="large-6 small-12 columns">
-        <div class="row collapse">
-          <div class="large-3 small-2 columns">
-            <span class="prefix">date</span>
-          </div>
-          <div class="large-9 small-10 columns">
-            <%= f.date_field :date %>
-          </div>
-        </div>
-      </div>
-      <div class="large-6 columns">
-        <%= f.text_field :start_time, placeholder: "Start Time"%>
-      </div>
-    </div> -->
-    <!-- end date/starttime -->
-
-    <!-- pay position and rate -->
-    <!-- <div class="row">
-      <div class="large-6 medium-6 columns">
-        <%= f.text_field :position, placeholder: "Position" %>
-      </div>
-      <div class="large-6 medium-6 columns">
-          <%= f.text_field :pay_rate, placeholder: "Pay Rate" %>
-      </div>
-    </div> -->
-    <!-- pay position/rate end -->
-
-    <!-- hours worked and subtotal  -->
-    <!-- <div class="row">
-      <div class="large-6 medium-6 columns">
-          <%= f.text_field :hours_worked, placeholder: "Hours Worked" %>
-      </div>
-      <div class="large-6 medium-6 columns">
-        <%= f.text_field :hours_worked, placeholder: "Subtotal" %>
-      </div>
-    </div> -->
-    <!-- end hours worked and subtotal -->
-
-    <!-- additional shifts -->
+    <!-- shifts -->
     <div id="shifts-wrapper"></div>
-    <!-- end additional shifts -->
+    <!-- end shifts -->
 
     <!-- add/delete shift button -->
     <div class="row">
-      <div class="large-6 large-centered medium-8 medium-centered small-9 small-centered columns">
+      <div class="large-6 large-centered medium-7 medium-centered small-9 small-centered columns">
         <div class="large-6 medium-6 small-6 columns">
           <a href="#" id="add-shift"><%= render 'add_shift' %></a>
         </div>
@@ -122,7 +89,6 @@
     </div>
     <br>
     <!-- end add/delete shift button -->
-
 
     <div class="row">
       <div class="large-12 columns">
@@ -140,12 +106,12 @@
    <br>
 
     <div class="row">
-      <div class="large-6 large-centered medium-6 medium-centered small-8 small-centered columns">
+      <div class="large-5 large-centered medium-5 medium-centered small-8 small-centered columns">
         <div class="row collapse">
-          <div class="large-2 medium-2 small-2 columns">
-            <span class="prefix">Hrs</span>
+          <div class="large-3 medium-3 small-3 columns">
+            <span class="prefix">hrs</span>
           </div>
-          <div class="large-10 medium-10 small-10 columns">
+          <div class="large-9 medium-9 small-9 columns">
             <%= f.text_field :total_hours, :required=>true%>
           </div>
         </div>
@@ -153,12 +119,12 @@
     </div>
 
     <div class="row">
-      <div class="large-6 large-centered medium-6 medium-centered small-8 small-centered columns">
+      <div class="large-5 large-centered medium-5 medium-centered small-8 small-centered columns">
         <div class="row collapse">
-          <div class="large-2 medium-2 small-2 columns">
+          <div class="large-3 medium-3 small-3 columns">
             <span class="prefix">$</span>
           </div>
-          <div class="large-10 medium-10 small-10 columns">
+          <div class="large-9 medium-9 small-9 columns">
             <%= f.text_field :grand_total, :required=>true %>
           </div>
         </div>
@@ -174,13 +140,11 @@
   </div> -->
 
   <div class="row">
-    <div class="large-6 large-centered medium-6 medium-centered small-8 small-centered columns">
+    <div class="large-5 large-centered medium-5 medium-centered small-8 small-centered columns">
       <!-- <div class="large-6 columns" id="hide-review">
         <button name="review" class="button expand" id="review">Review</button>
       </div> -->
-      <div class="large-6 columns">
-        <%= f.submit "Submit", class: "button expand" %>
-      </div>
+      <%= f.submit "Submit", class: "button expand" %>
     </div>
   </div>
 
@@ -188,5 +152,6 @@
   <% end %>
 
 </div>
+<!-- end TIMESHEET -->
 <br>
 <br>
