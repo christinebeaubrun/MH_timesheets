@@ -1,5 +1,5 @@
 $(document).on('page:change', function(){
-  var maxShifts      = 13, //maximum shifts allowed
+  var maxShifts      = 59, //maximum shifts allowed
       shiftsWrapper  = $('#shifts-wrapper'), //id tag where shifts elements will be inserted
       addShift       = $('#add-shift'),
       removeShift    = $('#remove-shift'),
