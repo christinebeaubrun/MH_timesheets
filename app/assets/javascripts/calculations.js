@@ -23,11 +23,11 @@ $(document).on('page:change', function(){
         grandTotalValue = 0;
 
     $('.subtotal').each(function(index, elem){
-      var s = parseFloat($(elem).text());
+      var s = parseFloat($(elem).val());
       if (s){
         grandTotalValue += s;
       }
-      grandTotalElement.text(grandTotalValue);
+      grandTotalElement.val(grandTotalValue);
     });
   });
   //could refactor function underneath, which repeats function above except switching '.hours' and '.rate'
@@ -37,11 +37,11 @@ $(document).on('page:change', function(){
         grandTotalValue = 0;
 
     $('.subtotal').each(function(index, elem){
-      var s = parseFloat($(elem).text());
+      var s = parseFloat($(elem).val());
       if (s){
         grandTotalValue += s;
       }
-      grandTotalElement.text(grandTotalValue);
+      grandTotalElement.val(grandTotalValue);
     });
   });
 
@@ -53,7 +53,7 @@ $(document).on('page:change', function(){
       if (h){
         totalHoursValue += h;
       }
-      totalHoursElement.text(totalHoursValue);
+      totalHoursElement.val(totalHoursValue);
     });
   });
 });
