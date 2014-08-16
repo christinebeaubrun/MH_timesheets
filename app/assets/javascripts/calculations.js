@@ -3,23 +3,22 @@
 
 
 $(document).on('page:change', function(){
-  $('#shifts-wrapper').on('keyup', '.rate', function(){    
-    var subtotalElement = $(this).closest('.shift').children('.subtotal');    
-    var subtotalNumber =  $(this).val() * $(this).closest('.shift').children('.hours').val();   
-    subtotalElement.text(subtotalNumber);
+  $('#timesheet').on('keyup', '.rate', function(){  
+    var subtotalElement = $(this).closest('.shift').children('.subtotal-div-1').children('.subtotal-div-2').children('.subtotal-div-3').children('.subtotal-div-4').children('.subtotal');
+    var subtotalNumber =  $(this).val() * $(this).closest('.shift').children('.hours-div-1').children('.hours-div-2').children('.hours-div-3').children('.hours-div-4').children('.hours').val();   
+    subtotalElement.val(subtotalNumber);
   });
 
 
   //could refactor function underneath, which repeats function above except switching '.hours' and '.rate'
-  $('#shifts-wrapper').on('keyup', '.hours', function(){
-    var subtotalElement = $(this).closest('.shift').children('.subtotal');
-    var subtotalNumber =  $(this).val() * $(this).closest('.shift').children('.rate').val();
-    subtotalElement.text(subtotalNumber);
-
+  $('#timesheet').on('keyup', '.hours', function(){
+    var subtotalElement = $(this).closest('.shift').children('.subtotal-div-1').children('.subtotal-div-2').children('.subtotal-div-3').children('.subtotal-div-4').children('.subtotal');
+    var subtotalNumber =  $(this).val() * $(this).closest('.shift').children('.rate-div-1').children('.rate-div-2').children('.rate-div-3').children('.rate-div-4').children('.rate').val();
+    subtotalElement.val(subtotalNumber);
 
   });
 
-    $('#shifts-wrapper').on('keyup', '.rate', function(){
+    $('#timesheet').on('keyup', '.rate', function(){
     var grandTotalElement = $('#timesheet_grand_total'),
         grandTotalValue = 0;
 
@@ -33,7 +32,7 @@ $(document).on('page:change', function(){
   });
   //could refactor function underneath, which repeats function above except switching '.hours' and '.rate'
 
-  $('#shifts-wrapper').on('keyup', '.hours', function(){
+  $('#timesheet').on('keyup', '.hours', function(){
     var grandTotalElement = $('#timesheet_grand_total'),
         grandTotalValue = 0;
 
@@ -46,7 +45,7 @@ $(document).on('page:change', function(){
     });
   });
 
-   $('#shifts-wrapper').on('keyup', '.hours', function(){
+   $('#timesheet').on('keyup', '.hours', function(){
     var totalHoursElement = $('#timesheet_total_hours'),
         totalHoursValue = 0;
     $('.hours').each(function(index, elem){
