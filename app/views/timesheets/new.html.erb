@@ -36,22 +36,26 @@
     <br>
 
     <div class="row">
-      <div class="large-6 medium-6 columns">
-        <%= f.text_field :firstname, placeholder: "First Name", :required=>true %>
-      </div>
-      <div class="large-6 medium-6 columns">
-        <%= f.text_field :lastname, placeholder: "Last Name", :required=>true %>
+      <div class="large-12 small-12 columns">
+        <div class="row collapse">
+          <div class="large-2 medium-2 small-2 columns">
+            <span class="prefix">name</span>
+          </div>
+          <div class="large-10 small-10 columns">
+            <%= f.text_field :name, placeholder: "Full Name", :required=>true %>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="row">
       <div class="large-12 small-12 columns">
         <div class="row collapse">
-          <div class="large-2 small-2 columns">
+          <div class="large-2 medium-2 small-2 columns">
             <span class="prefix">email</span>
           </div>
           <div class="large-10 small-10 columns">
-            <%= f.email_field :email, :required=>true %>
+            <%= f.email_field :email, placeholder: "example@gmail.com", :required=>true %>
           </div>
         </div>
       </div>
@@ -130,7 +134,6 @@
     <!-- end verification section -->
   </div>
   <!-- review form -->
-  <br>
   <div class="row">
     <div class="large-12 medium-12 small-12 columns">
       <img src="assets/confirmationRibbon.png">

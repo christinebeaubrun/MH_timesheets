@@ -1,6 +1,5 @@
 <h1>Timesheet for: <%= @name %></h1>
-  <p>First name: <%= @message.firstname%><br /></p>
-  <p>Last name:  <%= @message.lastname%><br /></p>
+  <p>Name: <%= @message.name %><br /></p>
   <p>Email:  <%= @message.email%><br /></p>
   <br>
   <% @message.shifts.each do |shift| %>
