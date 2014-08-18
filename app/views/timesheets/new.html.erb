@@ -38,11 +38,11 @@
     <div class="row">
       <div class="large-12 small-12 columns">
         <div class="row collapse">
-          <div class="large-2 medium-2 small-2 columns">
+          <div class="large-2 small-2 columns">
             <span class="prefix">name</span>
           </div>
           <div class="large-10 small-10 columns">
-            <%= f.text_field :name, placeholder: "Full Name", :required=>true %>
+            <%= f.text_field :fullname, :required=>true, :placeholder=>"First name, Last name" %>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@
             <span class="prefix">email</span>
           </div>
           <div class="large-10 small-10 columns">
-            <%= f.email_field :email, placeholder: "example@gmail.com", :required=>true %>
+            <%= f.email_field :email, :required=>true, :placeholder=>"example@gmail.com" %>
           </div>
         </div>
       </div>
@@ -150,3 +150,5 @@
 <!-- end TIMESHEET -->
 <br>
 <br>
+
+<!-- <select class="position" name="timesheet[shifts][][position]" required><option value="tourguide">Tour Guide</option><option value="cohost">Co-host</option><option value="admin">Admin</option><option value="other">Other</option></select> -->
