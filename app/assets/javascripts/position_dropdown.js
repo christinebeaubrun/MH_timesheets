@@ -16,7 +16,7 @@ function alertSelection(position) {
     if (position === "Co-host") {
         $("input#timesheet_pay_rate.rate").val('' + mhPosition["Co-host"]);
    }
-      else {
+    if (position === "Admin") {
         $("input#timesheet_pay_rate.rate").val('' + mhPosition["Admin"]);
       }
   }
