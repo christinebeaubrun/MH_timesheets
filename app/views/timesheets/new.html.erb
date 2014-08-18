@@ -1,24 +1,24 @@
 <!-- MUSEUM HACK logo -->
-  <div class="large-11 large-offset-1 large-centered medium-11 medium-centered medium-offset-1 small-11 small-centered small-offset-1 columns" id="mhlogo">
-    <br>
-    <img src="/assets/mhlogo.png">
-    <br>
-    <br>
-  </div>
+<div class="large-11 large-offset-1 large-centered medium-11 medium-centered medium-offset-1 small-11 small-centered small-offset-1 columns" id="mhlogo">
+  <br>
+  <img src="/assets/mhlogo.png">
+  <br>
+  <br>
+</div>
 <!-- end MUSEUM HACK logo -->
 
 <!-- form validations -->
 <div id="validations">
-   <% if @timesheet.errors.any? %>
-     <div id="error-explanation">
-       <h2><%= pluralize(@timesheet.errors.count, "error") %> prohibit your timesheet from being sent:</h2>
-       <ul>
-       <% @timesheet.errors.full_messages.each do |message| %>
-         <li><%= message %></li>
-       <% end %>
-       </ul>
-     </div>
-  <% end %>
+ <% if @timesheet.errors.any? %>
+ <div id="error-explanation">
+   <h2><%= pluralize(@timesheet.errors.count, "error") %> prohibit your timesheet from being sent:</h2>
+   <ul>
+     <% @timesheet.errors.full_messages.each do |message| %>
+     <li><%= message %></li>
+     <% end %>
+   </ul>
+ </div>
+ <% end %>
 </div>
 <!-- end form validations -->
 
@@ -26,7 +26,7 @@
 <div class="large-6 large-centered medium-8 medium-centered small-11 small-centered columns" id="sheet">
   <div id="timesheet">
     <br>
-  <%= form_for @timesheet do |f| %>
+    <%= form_for @timesheet do |f| %>
     <!-- Employee info -->
     <div class="row">
       <div class="large-6 large-centered medium-6 medium-centered small-7 small-centered columns">
@@ -99,7 +99,7 @@
     </div>
 
     <!-- verification section -->
-   <div class="row">
+    <div class="row">
      <div class="large-6 large-centered medium-6 medium-centered small-7 small-centered columns">
        <img src="assets/grand_total.png"/>
      </div>
@@ -118,6 +118,7 @@
         </div>
       </div>
     </div>
+  </div>
 
     <div class="row">
       <div class="large-5 large-offset-3 medium-5 medium-offset-3 small-7 small-offset-2 columns">
@@ -131,21 +132,90 @@
         </div>
       </div>
     </div>
-    <!-- end verification section -->
   </div>
-  <!-- review form -->
+  <!-- end verification section -->
+</div>
+<!-- review form -->
+<div class="row">
+  <div class="large-12 medium-12 small-12 columns">
+    <img src="assets/confirmationRibbon.png">
+  </div>
+</div>
+<br>
+<div class="row collapse">
+  <div class="large-5 large-centered medium-5 medium-centered small-8 small-centered columns">
+    <%= f.submit "SUBMIT", class: "button expand" %>
+  </div>
+</div>
+<% end %>
+</div>
+<!-- end TIMESHEET -->
+<br>
+<br>
+<div class="shift hidden" id="new-shift-row-">
   <div class="row">
-    <div class="large-12 medium-12 small-12 columns">
-      <img src="assets/confirmationRibbon.png">
+    <div class="large-12 large-centered columns">
+      <hr>
     </div>
   </div>
   <br>
-  <div class="row collapse">
-    <div class="large-5 large-centered medium-5 medium-centered small-8 small-centered columns">
-      <%= f.submit "SUBMIT", class: "button expand" %>
+  <div class="row">
+    <div class="large-6 medium-6 small-12 columns">
+      <div class="row collapse">
+        <div class="large-3 medium-3 small-2 columns">
+          <span class="prefix">date</span>
+        </div>
+        <div class="large-9 medium-9 small-10 columns">
+          <input class="date" id="timesheet_date" name="timesheet[shifts][][date]" type="date" required>
+        </div>
+      </div>
+    </div>
+    <div class="large-6 medium-6 small-12 columns">
+      <div class="row collapse">
+        <div class="large-3 medium-3 small-2 columns">
+          <span class="prefix">time</span>
+        </div>
+        <div class="large-9 medium-9 small-10 columns">
+          <input class="start_time" id="timesheet_start_time" name="timesheet[shifts][][start_time]" placeholder="Start Time" type="time" required>
+        </div>
+      </div>
     </div>
   </div>
-  <% end %>
+  <div class="row">
+    <div class="large-6 medium-6 small-12 columns">
+      <input type="text" class="position" name="timesheet[shifts][][position]" placeholder="Position" type="text" required></div><div class="large-6 medium-6 small-12 columns">
+      <div class="row collapse">
+        <div class="large-2 medium-2 small-2 columns">
+          <span class="prefix">$</span>
+        </div>
+        <div class="large-10 medium-10 small-10 columns">
+          <input class="rate" id="timesheet_pay_rate" name="timesheet[shifts][][pay_rate]" placeholder="Pay Rate" type="text" required>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 medium-6 small-12 columns">
+      <div class="row collapse">
+        <div class="large-3 medium-3 small-2 columns">
+          <span class="prefix">hrs</span>
+        </div>
+        <div class="large-9 medium-9 small-10 columns">
+          <input class="hours" id="timesheet_hours_worked" name="timesheet[shifts][][hours_worked]" placeholder="Time On Shift" type="text" required>
+        </div>
+      </div>
+    </div>
+    <div class="large-6 medium-6 small-12 columns">
+      <div class="row collapse">
+        <div class="large-2 medium-2 small-2 columns">
+          <span class="prefix">$</span>
+        </div>
+        <div class="large-10 medium-10 small-10 columns">
+          <input class="subtotal" name="timesheet[shifts][][subtotal]" placeholder="Subtotal" type="text" required>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- end TIMESHEET -->
 <br>
