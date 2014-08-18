@@ -106,30 +106,27 @@
    </div>
    <br>
 
-    <div class="row">
-      <div class="large-5 large-offset-3 medium-5 medium-offset-3 small-7 small-offset-2 columns"">
-        <div class="row collapse">
-          <div class="large-3 medium-3 small-3 columns">
-            <span><img src="assets/hours.png"/></span>
-          </div>
-          <div class="large-9 medium-9 small-9 columns">
-            <%= f.text_field :total_hours, :required=>true%>
-          </div>
+   <div class="row">
+    <div class="large-5 large-offset-3 medium-5 medium-offset-3 small-7 small-offset-2 columns">
+      <div class="row collapse">
+        <div class="large-3 medium-3 small-3 columns">
+          <span><img src="assets/hours.png"/></span>
+        </div>
+        <div class="large-9 medium-9 small-9 columns">
+          <%= f.text_field :total_hours, :required=>true%>
         </div>
       </div>
     </div>
   </div>
 
-    <div class="row">
-      <div class="large-5 large-offset-3 medium-5 medium-offset-3 small-7 small-offset-2 columns">
-        <div class="row collapse">
-          <div class="large-3 medium-3 small-3 columns">
-            <span><img src="assets/total.png"/></span>
-          </div>
-          <div class="large-9 medium-9 small-9 columns">
-            <%= f.text_field :grand_total, :required=>true %>
-              </div>   
-          </div>
+  <div class="row">
+    <div class="large-5 large-offset-3 medium-5 medium-offset-3 small-7 small-offset-2 columns">
+      <div class="row collapse">
+        <div class="large-3 medium-3 small-3 columns">
+          <span><img src="assets/total.png"/></span>
+        </div>
+        <div class="large-9 medium-9 small-9 columns">
+          <%= f.text_field :grand_total, :required=>true %> 
         </div>
       </div>
     </div>
@@ -184,13 +181,20 @@
   </div>
   <div class="row">
     <div class="large-6 medium-6 small-12 columns">
-      <input type="text" class="position" name="timesheet[shifts][][position]" placeholder="Position" type="text" required></div><div class="large-6 medium-6 small-12 columns">
+      <select class="MH_Position" name="timesheet[shifts][][position]" required>
+        <option value="tourguide">Tour Guide</option>
+        <option value="cohost">Co-host</option>
+        <option value="admin">Admin</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="large-6 medium-6 small-12 columns">
       <div class="row collapse">
         <div class="large-2 medium-2 small-2 columns">
           <span class="prefix">$</span>
         </div>
         <div class="large-10 medium-10 small-10 columns">
-          <input class="rate" id="timesheet_pay_rate" name="timesheet[shifts][][pay_rate]" placeholder="Pay Rate" type="text" required>
+          <input class="rate" class="timesheet_pay_rate" name="timesheet[shifts][][pay_rate]" placeholder="Pay Rate" type="text" required>
         </div>
       </div>
     </div>
@@ -221,5 +225,3 @@
 <!-- end TIMESHEET -->
 <br>
 <br>
-
-<!-- <select class="position" name="timesheet[shifts][][position]" required><option value="tourguide">Tour Guide</option><option value="cohost">Co-host</option><option value="admin">Admin</option><option value="other">Other</option></select> -->

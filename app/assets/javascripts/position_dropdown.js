@@ -6,23 +6,23 @@ function alertSelection(position) {
   };
 
   if(position === "Other") {
-    $("input#timesheet_pay_rate.rate").prop('disabled', false);
+    $("input.timesheet_pay_rate").prop('disabled', false);
   }
   else {
-        $("input#timesheet_pay_rate.rate").prop('disabled', true);
+        $("input.timesheet_pay_rate.rate").prop('disabled', true);
     if (position === "Tour Guide") {
-        $("input#timesheet_pay_rate.rate").val('' + mhPosition["Tour Guide"]);
+        $("input.timesheet_pay_rate").val('' + mhPosition["Tour Guide"]);
     }
     if (position === "Co-host") {
-        $("input#timesheet_pay_rate.rate").val('' + mhPosition["Co-host"]);
+        $("input.timesheet_pay_rate").val('' + mhPosition["Co-host"]);
    }
     if (position === "Admin") {
-        $("input#timesheet_pay_rate.rate").val('' + mhPosition["Admin"]);
+        $("input.timesheet_pay_rate").val('' + mhPosition["Admin"]);
       }
   }
 }
 
-$(document).on('change', "select#MH_Position", function(event){
+$(document).on('change', "select.MH_Position", function(event){
   var select_element = $("select option:selected")[0].value;
   alertSelection(select_element);
 });
