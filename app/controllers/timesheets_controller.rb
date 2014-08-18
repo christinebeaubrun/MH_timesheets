@@ -6,7 +6,7 @@ class TimesheetsController < ApplicationController
   def create
     @timesheet = Timesheet.new(params[:timesheet])
       if @timesheet.valid?
-        @name = "#{@timesheet.firstname}, #{@timesheet.lastname}"
+        @name = "#{@timesheet.name}"
         @message = @timesheet
         @email = @timesheet.email
         payroll = "mhmailr@gmail.com"
@@ -17,7 +17,7 @@ class TimesheetsController < ApplicationController
         # end
 
         render :action => 'send_email'
-        
+
       else
         render :new
       end
