@@ -13,9 +13,13 @@ class TimesheetsController < ApplicationController
 
         payroll = "mhmailr@gmail.com"
         recipients = [payroll, @email]
+
         recipients.each do |email|
           ConfirmationMailer.confirmation_email(@name, @message, @email).deliver
         end
+
+        render :action => 'send_email'
+
       else
         render :new
       end
