@@ -16,12 +16,16 @@ class Timesheet
   end
 
   def grand_total
-    shifts.inject(0) {|memo, shift| memo + shift.subtotal }
-    # shifts.map(&:subtotal).inject(:+)
+    if shifts
+      shifts.inject(0) {|memo, shift| memo + shift.subtotal }
+      # shifts.map(&:subtotal).inject(:+)
+    end
   end
 
   def total_hours
-    shifts.inject(0) {|memo, shift| memo + shift.hours_worked }
+    if shifts
+      shifts.inject(0) {|memo, shift| memo + shift.hours_worked }
+    end
   end
 
   def persisted?
