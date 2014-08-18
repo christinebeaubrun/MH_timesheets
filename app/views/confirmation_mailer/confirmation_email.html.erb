@@ -1,15 +1,15 @@
 <h1>Timesheet for: <%= @name %></h1>
-  <p>Name: <%= @message.name %><br /></p>
+  <p>Name: <%= @message.fullname %><br /></p>
   <p>Email:  <%= @message.email%><br /></p>
   <br>
   <% @message.shifts.each do |shift| %>
-      <h2><p>Date:  <%= shift["date"] %><br /></p></h2>
-      <p>Start time:  <%= shift["start_time"] %><br /></p>
-      <p>Position:  <%= shift["position"] %><br /></p>
-      <p>Pay Rate:  <%= shift["pay_rate"] %><br /></p></p>
-      <p>Hours worked:  <%= shift["hours_worked"] %><br /></p>
-      <p>Subtotal:  <%= shift["subtotal"] %><br /></p>
+      <h2><p>Date:  <%= shift.date %><br /></p></h2>
+      <p>Start time:  <%= shift.start_time %><br /></p>
+      <p>Position:  <%= shift.position %><br /></p>
+      <p>Pay Rate:  <%= number_to_currency(shift.pay_rate) %><br /></p></p>
+      <p>Hours worked:  <%= shift.hours_worked %><br /></p>
+      <p>Subtotal:  <%= number_to_currency(shift.subtotal) %><br /></p>
       <br>
   <% end %>
   <p>Total hours:  <%= @message.total_hours%><br /></p>
-  <p>Grand total: <%= @message.grand_total%></p>
+  <p>Grand total: <%= number_to_currency(@message.grand_total) %></p>
