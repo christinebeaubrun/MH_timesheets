@@ -9,7 +9,8 @@ class TimesheetsController < ApplicationController
         @name = "#{@timesheet.fullname}"
         @message = @timesheet
         @email = @timesheet.email
-        render :action => 'send_email'
+        binding.pry 
+        render 'send_email'
 
         payroll = "mhmailr@gmail.com"
         recipients = [payroll, @email]
@@ -17,8 +18,6 @@ class TimesheetsController < ApplicationController
         recipients.each do |email|
           ConfirmationMailer.confirmation_email(@name, @message, @email).deliver
         end
-
-        render :action => 'send_email'
 
       else
         render :new
