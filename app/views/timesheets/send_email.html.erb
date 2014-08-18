@@ -10,8 +10,7 @@
   <h1>CONFIRMATION</h1>
   <h2>Hi <%= @name %></h2>
   <h3>Here is your timesheet below</h3>
-  <p>First name: <%= @message.firstname%><br /></p>
-  <p>Last name:  <%= @message.lastname%><br /></p>
+  <p>Full name: <%= @message.fullname%><br /></p>
   <p>Email:  <%= @message.email%><br /></p>
   <% @message.shifts.each do |shift| %>
       <h3><u>Date:  <%= shift["date"] %></u></h3><br />
