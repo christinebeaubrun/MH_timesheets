@@ -113,7 +113,7 @@
             <span><img src="assets/hours.png"/></span>
           </div>
           <div class="large-9 medium-9 small-9 columns">
-            <%= f.text_field :total_hours, :required=>true%>
+            <%= f.text_field :total_hours, :required=>true, :disabled=>true%>
           </div>
         </div>
       </div>
@@ -126,7 +126,7 @@
             <span><img src="assets/total.png"/></span>
           </div>
           <div class="large-9 medium-9 small-9 columns">
-            <%= f.text_field :grand_total, :required=>true %>
+            <%= f.text_field :grand_total, :required=>true, :disabled=>true%>
           </div>
         </div>
       </div>
@@ -151,4 +151,34 @@
 <br>
 <br>
 
-<!-- <select class="position" name="timesheet[shifts][][position]" required><option value="tourguide">Tour Guide</option><option value="cohost">Co-host</option><option value="admin">Admin</option><option value="other">Other</option></select> -->
+<div class="row collapse">
+  <div class="large-3 medium-3 small-2 columns">
+    <span class="prefix">time</span>
+  </div>
+  <div class="large-9 medium-9 small-10 columns">
+        <select class="start_time timesheet_start_time" name="timesheet[shifts][][start_time]" required>
+          <option value="9:00am">9:00am</option>
+          <option value="9:15am">9:15am</option>
+          <option value="9:30am">9:30am</option>
+          <option value="9:45am">9:45am</option>
+          <option value="10:00am">10:00am</option>
+          <option value="10:15am">10:15am</option>
+          <option value="10:30am">10:30am</option>
+          <option value="10:45am">10:45am</option>
+          <option value="11:00am">11:00am</option>
+          <option value="11:15am">11:15am</option>
+          <option value="11:30am">11:30am</option>
+          <option value="11:45am">11:45am</option>
+          <option value="12:00pm">12:00pm</option>
+          <option value="12:15pm">12:15pm</option>
+          <option value="12:30pm">12:30pm</option>
+          <option value="12:45pm">12:45pm</option>
+          <option value="1:00pm">1:00pm</option> 
+          <option value="1:00pm">1:00pm</option>
+          <option value="1:15pm">1:15pm</option>
+          <option value="1:30pm">1:30pm</option>
+          <option value="1:45pm">1:45pm</option>
+          <option value="1:00pm">1:00pm</option>
+        </select>
+  </div>
+</div>
