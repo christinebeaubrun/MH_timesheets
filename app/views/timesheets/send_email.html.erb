@@ -17,6 +17,7 @@
     <p>Email:  <%= @message.email%><br /></p>
     <% @message.shifts.each do |shift| %>
     <hr>
+    <br>
     <h2><p>Date:  <%= shift.date %><br /></p></h2>
     <p>Start time:  <%= shift.start_time %><br /></p>
     <p>Position:  <%= shift.position %><br /></p>
