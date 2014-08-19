@@ -9,7 +9,6 @@ class TimesheetsController < ApplicationController
         @name = "#{@timesheet.fullname}"
         @message = @timesheet
         @email = @timesheet.email
-        binding.pry 
         render 'send_email'
 
         payroll = "mhmailr@gmail.com"
