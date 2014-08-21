@@ -11,7 +11,7 @@ class TimesheetsController < ApplicationController
         @email = @timesheet.email
         render 'send_email'
 
-        payroll = "mhmailr@gmail.com"
+        payroll = ENV["RECIPIENT_EMAIL"]
         recipients = [payroll, @email]
 
         recipients.each do |email|
