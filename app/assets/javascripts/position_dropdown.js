@@ -12,69 +12,59 @@ function setPayRate(position, rateField) {
     rateField.prop('disabled', true);
     rateField.val('' + mhPosition[position]);
   }
-
-  // if(position === "Other") {
-  //   rateField.prop('disabled', false);
-  //   rateField.val('');
-  // }
-  // else {
-  //       rateField.prop('disabled', true);
-  //   if (position === "Tour Guide") {
-  //       rateField.val('' + mhPosition["Tour Guide"]);
-  //   }
-  //   if (position === "Co-host") {
-  //       rateField.val('' + mhPosition["Co-host"]);
-  //  }
-  //   if (position === "Admin") {
-  //       rateField.val('' + mhPosition["Admin"]);
-  //     }
-  // }
 }
 
-function setSubtotal(rate, hours, subtotal){
-   var rateAmount = parseFloat(rate.val());
-   var hoursAmount = parseFloat(hours.val());
-
-   if(rateAmount && hoursAmount){
-     subtotal.val(rateAmount * hoursAmount);
-     subtotal.trigger('change');
-   }
-}
-
-$(document).on('change', "select.MH_Position", function(event){
-  var position = $(this).val();
-  var rateField = $(this).parents('.shift').find('.rate');
-  var hoursField = $(this).parents('.shift').find('.hours');
-  var subtotalField = $(this).parents('.shift').find('.subtotal');
-  setPayRate(position, rateField);
-  setSubtotal(rateField, hoursField, subtotalField);
-});
-
-$(document).on('change', '.hours', function(event){
-  var rateField = $(this).parents('.shift').find('.rate');
-  var hoursField = $(this);
-  var subtotalField = $(this).parents('.shift').find('.subtotal');
-  setSubtotal(rateField, hoursField, subtotalField);
-});
-
-$(document).on('change', ".subtotal", function(event){
+function calculateSubtotal(hours, payRate, subtotalField) {
   var totalPay = 0;
-  var totalHours = 0;
-  $('.subtotal').each(function(){
-    var subtotal = parseFloat($(this).val());
-    if(subtotal){
-      totalPay += subtotal;
-    }
-  });
+  if(hours && payRate) {
+    subtotalField.val(hours * payRate);
+  }
+}
 
-  $('.hours').each(function(){
-    var hours = parseFloat($(this).val());
-    if(hours){
-      totalHours += hours;
-    }
-  });
+function addTotalHours(timesheetTotalHours, totalWeeklyHours) {
+  $('input.subtotal').trigger('change');
+  timesheetTotalHours.val(totalWeeklyHours);
+}
 
-  $('#timesheet_total_hours').val(totalHours);
-  $('#timesheet_grand_total').val(totalPay);
+function addTotalPay(timesheetGrandTotal, totalWeeklyPay) {
+  timesheetGrandTotal.val(totalWeeklyPay);
+}
+
+
+$(document).on('change', ".MH_Position", function() {
+  var position = $(this).val();
+  var rateField = $(this).parents(".shift").find(".rate");
+  setPayRate(position, rateField);
+});
+
+$(document).on('keyup', ".hours", function() {
+  var hours = parseFloat($(this).val());
+  var payRate = parseFloat($(this).parents(".shift").find(".rate").val());
+  var subtotalField = $(this).parents(".shift").find(".subtotal");
+  calculateSubtotal(hours, payRate, subtotalField);
+});
+
+$(document).on('keyup', '.hours', function() {
+  var totalhoursArray = $('.hours');
+  var totalWeeklyHours = 0;
+  for (var i = 0; i < totalhoursArray.length; i++) {
+    if( parseFloat(totalhoursArray[i].value) ) {
+      totalWeeklyHours += parseFloat(totalhoursArray[i].value);
+    }
+  }
+  var timesheetTotalHours = $('#timesheet_total_hours');
+  addTotalHours(timesheetTotalHours, totalWeeklyHours);
+});
+
+$(document).on('change', 'input.subtotal', function() {
+  var subtotalArray = $('.subtotal');
+  var totalWeeklyPay = 0;
+  for (var i = 0; i < subtotalArray.length; i++) {
+    if( parseFloat(subtotalArray[i].value) ) {
+      totalWeeklyPay += parseFloat(subtotalArray[i].value);
+    }
+  }
+  var timesheetGrandTotal =   $('#timesheet_grand_total');
+  addTotalPay(timesheetGrandTotal, totalWeeklyPay);
 });
 
