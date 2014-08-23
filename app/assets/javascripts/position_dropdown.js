@@ -47,11 +47,11 @@ $(document).on('keyup', ".hours", function() {
 $(document).on('keyup', '.hours', function() {
   var totalhoursArray = $('.hours');
   var totalWeeklyHours = 0;
-  for (var i = 0; i < totalhoursArray.length; i++) {
-    if( parseFloat(totalhoursArray[i].value) ) {
-      totalWeeklyHours += parseFloat(totalhoursArray[i].value);
-    }
-  }
+  totalhoursArray.each(function(index, value) {
+      if( parseFloat( $(this).val()) ) {
+          totalWeeklyHours += parseFloat( $(this).val() );
+      }
+  });
   var timesheetTotalHours = $('#timesheet_total_hours');
   addTotalHours(timesheetTotalHours, totalWeeklyHours);
 });
@@ -59,12 +59,12 @@ $(document).on('keyup', '.hours', function() {
 $(document).on('change', 'input.subtotal', function() {
   var subtotalArray = $('.subtotal');
   var totalWeeklyPay = 0;
-  for (var i = 0; i < subtotalArray.length; i++) {
-    if( parseFloat(subtotalArray[i].value) ) {
-      totalWeeklyPay += parseFloat(subtotalArray[i].value);
-    }
-  }
-  var timesheetGrandTotal =   $('#timesheet_grand_total');
+  subtotalArray.each(function(index, value) {
+      if( parseFloat( $(this).val()) ) {
+        totalWeeklyPay += parseFloat( $(this).val() );
+      }
+  });
+  var timesheetGrandTotal = $('#timesheet_grand_total');
   addTotalPay(timesheetGrandTotal, totalWeeklyPay);
 });
 
