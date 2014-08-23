@@ -1,7 +1,7 @@
 <!-- MUSEUM HACK logo -->
   <div class="large-11 large-offset-1 large-centered medium-11 medium-centered medium-offset-1 small-11 small-centered small-offset-1 columns" id="mhlogo">
     <br>
-    <img src="/assets/mhlogo.png">
+    <%= image_tag("mhlogo.png") %>
     <br>
     <br>
   </div>
@@ -30,7 +30,7 @@
     <!-- Employee info -->
     <div class="row">
       <div class="large-6 large-centered medium-6 medium-centered small-7 small-centered columns">
-        <img src="assets/employee_info.png"/>
+        <%= image_tag("employee_info.png") %>
       </div>
     </div>
     <br>
@@ -60,6 +60,7 @@
         </div>
       </div>
     </div>
+    <br>
     <!-- end employee info -->
     <div class="row">
       <div class="large-12 large-centered columns">
@@ -69,7 +70,7 @@
 
     <div class="row">
       <div class="large-6 large-centered medium-6 medium-centered small-7 small-centered columns">
-        <img src="assets/shift_info.png"/>
+        <%= image_tag("shift_info.png") %>
       </div>
     </div>
     <br>
@@ -101,7 +102,7 @@
     <!-- verification section -->
    <div class="row">
      <div class="large-6 large-centered medium-6 medium-centered small-7 small-centered columns">
-       <img src="assets/grand_total.png"/>
+       <%= image_tag("grand_total.png") %>
      </div>
    </div>
    <br>
@@ -110,7 +111,7 @@
       <div class="large-5 large-offset-3 medium-5 medium-offset-3 small-7 small-offset-2 columns">
         <div class="row collapse">
           <div class="large-3 medium-3 small-3 columns">
-            <span><img src="assets/hours.png"/></span>
+            <span><%= image_tag("hours.png") %></span>
           </div>
           <div class="large-9 medium-9 small-9 columns">
             <%= f.text_field :total_hours, :required=>true, :disabled=>true%>
@@ -123,7 +124,7 @@
       <div class="large-5 large-offset-3 medium-5 medium-offset-3 small-7 small-offset-2 columns">
         <div class="row collapse">
           <div class="large-3 medium-3 small-3 columns">
-            <span><img src="assets/total.png"/></span>
+            <span><%= image_tag("total.png") %></span>
           </div>
           <div class="large-9 medium-9 small-9 columns">
             <%= f.text_field :grand_total, :required=>true, :disabled=>true%>
@@ -136,7 +137,7 @@
   <!-- review form -->
   <div class="row">
     <div class="large-12 medium-12 small-12 columns">
-      <img src="assets/confirmationRibbon.png">
+      <%= image_tag("confirmationRibbon.png") %>
     </div>
   </div>
   <br>
@@ -150,5 +151,3 @@
 <!-- end TIMESHEET -->
 <br>
 <br>
-
-<!-- <div class="row collapse"><div class="large-3 medium-3 small-2 columns"><span class="prefix">time</span></div><div class="large-9 medium-9 small-10 columns"><select class="start_time timesheet_start_time" name="timesheet[shifts][][start_time]" required><option value="9:00am">9:00am</option><option value="9:15am">9:15am</option><option value="9:30am">9:30am</option><option value="9:45am">9:45am</option><option value="10:00am">10:00am</option><option value="10:15am">10:15am</option><option value="10:30am">10:30am</option><option value="10:45am">10:45am</option><option value="11:00am">11:00am</option><option value="11:15am">11:15am</option><option value="11:30am">11:30am</option><option value="11:45am">11:45am</option><option value="12:00pm">12:00pm</option><option value="12:15pm">12:15pm</option><option value="12:30pm">12:30pm</option><option value="12:45pm">12:45pm</option><option value="1:00pm">1:00pm</option><option value="1:15pm">1:15pm</option><option value="1:30pm">1:30pm</option><option value="1:45pm">1:45pm</option><option value="2:00pm">2:00pm</option><option value="2:15pm">2:15pm</option><option value="2:30pm">2:30pm</option><option value="2:45pm">2:45pm</option><option value="3:00pm">3:00pm</option><option value="3:15pm">3:15pm</option><option value="3:30pm">3:30pm</option><option value="3:45pm">3:45pm</option><option value="4:00pm">4:00pm</option><option value="4:15pm">4:15pm</option><option value="4:30pm">4:30pm</option><option value="4:45pm">4:45pm</option><option value="5:00pm">5:00pm</option><option value="5:15pm">5:15pm</option><option value="5:30pm">5:30pm</option><option value="5:45pm">5:45pm</option><option value="6:00pm">6:00pm</option><option value="6:15pm">6:15pm</option><option value="6:30pm">6:30pm</option><option value="6:45pm">6:45pm</option><option value="7:00pm">7:00pm</option><option value="7:15pm">7:15pm</option><option value="7:30pm">7:30pm</option><option value="7:45pm">7:45pm</option><option value="8:00pm">8:00pm</option><option value="8:15pm">8:15pm</option><option value="8:30pm">8:30pm</option><option value="8:45pm">8:45pm</option><option value="9:00pm">9:00pm</option></select></div></div> -->

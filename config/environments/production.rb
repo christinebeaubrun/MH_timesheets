@@ -48,8 +48,8 @@ Rails.application.configure do
     domain: "http://mhtimesheet.herokuapp.com",
     authentication: "login",
     enable_starttls_auto: true,
-    user_name: "mhmailr@gmail.com",
-    password: "chrissammy",
+    user_name: ENV["RECIPIENT_EMAIL"],
+    password: ENV["RECIPIENT_PASSWORD"],
     enable_starttls_auto: true
   }
 

@@ -1,7 +1,7 @@
 <div class="row">
   <div class="large-11 large-offset-1 medium-11 medium-offset-1 small-12 small-offset-1 columns" id="mhlogo">
     <br>
-    <img src="assets/email_logo.png" alt="EMAIL SENT!" />
+    <%= image_tag("email_logo.png") %>
     <br>
     <br>
 </div>
@@ -16,6 +16,8 @@
     <p>Name: <%= @message.fullname%><br /></p>
     <p>Email:  <%= @message.email%><br /></p>
     <% @message.shifts.each do |shift| %>
+    <hr>
+    <br>
     <h2><p>Date:  <%= shift.date %><br /></p></h2>
     <p>Start time:  <%= shift.start_time %><br /></p>
     <p>Position:  <%= shift.position %><br /></p>

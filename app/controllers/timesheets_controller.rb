@@ -9,10 +9,9 @@ class TimesheetsController < ApplicationController
         @name = "#{@timesheet.fullname}"
         @message = @timesheet
         @email = @timesheet.email
-        binding.pry 
         render 'send_email'
 
-        payroll = "mhmailr@gmail.com"
+        payroll = ENV["RECIPIENT_EMAIL"]
         recipients = [payroll, @email]
 
         recipients.each do |email|
